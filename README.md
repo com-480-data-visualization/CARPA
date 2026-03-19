@@ -1,4 +1,4 @@
-# Project of Data Visualization (COM-480)
+# UCSD Book Graph: What 15 Million Readers Reveal About the Human Condition
 
 | Student's name           | SCIPER |
 |--------------------------|--------|
