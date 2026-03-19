@@ -19,7 +19,7 @@ Our primary data source is the **UCSD Book Graph**, one of the largest publicly 
 
 2. **User–book interactions**---roughly 229 million shelf-level interactions from 876,145 users. Each row encodes a user ID, book ID, read status, rating (0–5), and whether a textual review was left. Of these, approximately 112 million are confirmed reads and 104 million include a numerical rating.
 
-3. **Detailed review texts**---over 15.7 million full-text reviews (~5 GB compressed JSON) covering ~2 million books and 465,000 users. Each review contains the user ID, book ID, rating, timestamp, and the complete review body in its original language.
+3. **Detailed review texts**---over 15.7 million full-text reviews covering ~2 million books and 465,000 users. Each review contains the user ID, book ID, rating, timestamp, and the complete review body in its original language.
 
 **Data quality and preprocessing.** The UCSD dataset is well-maintained: duplicates and mismatches were cleaned in an update. The maintainers provide Jupyter notebooks demonstrating loading and basic exploration. Nonetheless, several preprocessing steps are required: (a) decompressing and parsing the large JSON/CSV files into a queryable format; (b) resolving the genre tags, which are noisy shelf-derived labels that require consolidation into a manageable taxonomy (~15–20 macro-genres); (c) handling missing values in publication year and page count; (d) filtering out non-English reviews for the sentiment analysis components; and (e) constructing per-user temporal reading sequences by ordering interactions by timestamp.
 
@@ -54,7 +54,7 @@ We loaded and profiled the full UCSD Book Graph dataset. Below are our key findi
 
 **Rating distribution.** Ratings skew positive: 4-star and 5-star ratings together account for the majority of all scores, consistent with the well-known Goodreads survivorship bias (users mostly rate books they finish). The overall mean rating is approximately 3.85. Books with very few ratings show high variance, so we apply a minimum threshold of 30 ratings for book-level analyses.
 
-**Genre coverage.** The dataset provides genre subsets of unequal size. Romance (335K books, 42.8M interactions) and Fantasy & Paranormal (259K books, 55.4M interactions) dominate, while Poetry (36.5K books, 2.7M interactions) is far smaller. This imbalance requires normalization when comparing genre trends.
+**Genre coverage.** The dataset provides genre subsets of unequal size. Romance (658K books, 2M interactions) and Fantasy & Paranormal (538K books, 6M interactions) dominate, while Poetry (88.6K books, 2M interactions) is far smaller. This imbalance requires normalization when comparing genre trends.
 
 **Temporal span.** Review timestamps range from the early 2000s through late 2017, with review volume growing steeply from ~2007 onward, mirroring Goodreads' user growth. Data before 2010 is sparse; our primary analysis window will be 2010–2017.
 
