@@ -133,7 +133,7 @@ Our project occupies a novel intersection: it applies the *scale* of the UCSD Bo
 <!-- > - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data). -->
 <!-- > - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class. -->
 
-## Milestone 2 (1st May, 5pm)
+## Milestone 2 (17th April, 5pm)
 
 **10% of the final grade**
 
