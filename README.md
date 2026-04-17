@@ -43,6 +43,9 @@ python src/download_data.py
 # Run EDA notebook
 jupyter notebook src/eda_ucsd_book_graph.ipynb
 
+# Preprocess data for website
+python src/preprocess_for_website.py
+
 # Serve the website locally
 cd website && python3 -m http.server 8765
 # Open http://localhost:8765
