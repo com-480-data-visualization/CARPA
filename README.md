@@ -1,11 +1,54 @@
-# UCSD Book Graph: What 15 Million Readers Reveal About the Human Condition
+# What 15 Million Readers Reveal About the Human Condition
+
+> A narrative-driven data visualization exploring collective mood, reading psychology, and cultural aspiration through the UCSD Book Graph.
 
 | Student's name           | SCIPER |
 |--------------------------|--------|
 | Galanopoulou Rafaila     | 388285 |
 | Migliorelli Claudio      | 406790 |
-| Poorsarvi Tehrani Pooria | 390753 |
 | Poupakis Alexandros      | 387587 |
+
+🌐 **Website:** [https://migliio.github.io/super-secret-dataviz-carpa/](https://migliio.github.io/super-secret-dataviz-carpa/)
+
+---
+
+## Project Structure
+
+```
+├── website/              # Interactive visualization (D3.js + Scrollama)
+│   ├── index.html
+│   ├── css/style.css
+│   ├── data/             # Preprocessed JSON files (<50 KB total)
+│   └── js/               # config.js, streamgraph.js, drift.js, aspiration.js, main.js
+├── doc/                  # Milestone reports
+│   ├── milestone2_report.tex
+│   ├── milestone2_report.pdf
+│   └── Makefile          # make / make clean / make distclean
+├── src/                  # Python modules for data analysis
+│   ├── data_loading.py   # File paths, loaders, genre mapping
+│   ├── analysis.py       # Interaction scanning, rating stats, temporal analysis
+│   └── plotting.py       # Matplotlib/seaborn chart functions
+├── data/                 # UCSD Book Graph data files (~11 GB, not committed)
+├── download_data.py      # Script to download the full dataset
+├── preprocess_for_website.py  # Generates website/data/*.json from raw data
+└── eda_ucsd_book_graph.ipynb  # EDA notebook (imports from src/)
+```
+
+## Quick Start
+
+```bash
+# Download data (~11 GB)
+python download_data.py
+
+# Run EDA notebook
+jupyter notebook eda_ucsd_book_graph.ipynb
+
+# Serve the website locally
+cd website && python3 -m http.server 8765
+# Open http://localhost:8765
+```
+
+---
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
@@ -90,9 +133,55 @@ Our project occupies a novel intersection: it applies the *scale* of the UCSD Bo
 <!-- > - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data). -->
 <!-- > - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class. -->
 
-## Milestone 2 (17th April, 5pm)
+## Milestone 2 (1st May, 5pm)
 
 **10% of the final grade**
+
+📄 **Full report:** [`doc/milestone2_report.pdf`](doc/milestone2_report.pdf) (2-page LaTeX document)
+
+To rebuild the report:
+```bash
+cd doc && make        # builds the PDF
+cd doc && make clean  # removes build artifacts
+```
+
+### Summary
+
+We want to build a scrollytelling website that tells a story about how people read. The idea is simple: take a massive dataset of reading behavior and turn it into something anyone can explore and understand — no statistics background needed.
+
+Our data source is the UCSD Book Graph (2.36M books, 229M interactions, 15.7M reviews). We ask three questions:
+
+1. **Does the world shape what we read?** How genre popularity shifts over time and whether those shifts line up with real-world events.
+2. **Do readers get pickier over time?** How average ratings change as people read more books.
+3. **Do we read what we say we want to read?** How often genres get shelved as "to-read" versus actually read.
+
+The style is inspired by data journalism sites like *The Pudding*.
+
+**Prototype status:** All five visualizations are implemented and functional with **real preprocessed data** (sampled ~10% of the full dataset, aggregated into <50 KB of JSON). Visual themes (colors, typography, layout) may evolve before the final submission.
+
+**Core (MVP):** scrollytelling skeleton, genre streamgraph with event annotations, rating drift line chart, aspiration diverging bars, animated stat counters, offline data pipeline.
+
+**Nice to have:** sentiment word clouds (W9), user journey explorer (W5), book similarity network (W10), animated time-lapse (W4), geographic heatmap (W8).
+
+**Data processing at scale:** the website loads tiny pre-aggregated JSON, so it's always fast. The offline preprocessing currently samples ~10% and runs in ~3 minutes. For the full dataset we're considering: (a) switching to DuckDB/Polars for 5–10× speedup, (b) converting to Parquet for near-instant queries, or (c) increasing the sample to 50%+.
+
+**TODO:** deploy to GitHub Pages.
+
+<!-- OLD Milestone 2 text:
+**Prototype status:** All five visualizations are implemented and functional with **mock data**. The prototype is deployed via GitHub Pages. Visual themes (colors, typography, layout) may evolve before the final submission.
+
+**Core (MVP):** scrollytelling skeleton, genre streamgraph with event annotations, rating drift line chart, aspiration diverging bars, animated stat counters, real data pipeline.
+
+**Enhancements (stretch goals):** sentiment word clouds, user journey explorer, book similarity network, animated time-lapse, geographic heatmap.
+
+### GitHub Pages Setup
+
+To deploy the website:
+1. Go to **Settings → Pages** in the repository
+2. Under **Source**, select **Deploy from a branch**
+3. Choose **`main`** branch and **`/website`** folder (if available) or use **`/ (root)`** and symlink
+4. Alternatively, use the **`gh-pages`** branch: copy `website/` contents to root of a `gh-pages` branch
+-->
 
 ## Milestone 3 (29th May, 5pm)
 
