@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What 15 Million Readers Reveal About the Human Condition</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/scrollama@3.2.0/scrollama.min.js"></script>
+  <script src="https://unpkg.com/intersection-observer@0.12.2/intersection-observer.js"></script>
+</head>
+<body>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────────── -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>What 15&nbsp;Million Readers Reveal About the Human&nbsp;Condition</h1>
+      <p class="subtitle">
+        Tracing collective mood, reading psychology, and cultural aspiration
+        through the largest public dataset of book ratings.
+      </p>
+      <p class="scroll-hint">↓ Scroll to explore</p>
+    </div>
+  </section>
+
+  <!-- ─── NAV (sticky) ─────────────────────────────────────────────── -->
+  <nav id="sticky-nav">
+    <a href="#intro" class="nav-link active">Intro</a>
+    <a href="#mood" class="nav-link">Collective Mood</a>
+    <a href="#drift" class="nav-link">Rating Drift</a>
+    <a href="#aspiration" class="nav-link">Aspiration vs Reality</a>
+    <a href="#about" class="nav-link">About</a>
+  </nav>
+
+  <!-- ─── SECTION 1: INTRODUCTION ──────────────────────────────────── -->
+  <section id="intro" class="narrative-section">
+    <div class="text-column">
+      <h2>The Story in 229&nbsp;Million Ratings</h2>
+      <p>
+        A book rating is a uniquely honest data point. Nobody finishes a
+        400-page novel for algorithmic visibility. When millions of such
+        signals are aggregated over time, they trace the emotional currents
+        of a population.
+      </p>
+      <p>
+        We analyzed the <strong>UCSD Book Graph</strong>&thinsp;—&thinsp;2.36&nbsp;million
+        books, 229&nbsp;million interactions, and 15.7&nbsp;million full-text
+        reviews&thinsp;—&thinsp;to make those currents visible.
+      </p>
+    </div>
+    <div class="viz-column">
+      <div id="stats-panel" class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number" data-target="2360655">0</span>
+          <span class="stat-label">Books</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="229154523">0</span>
+          <span class="stat-label">Interactions</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="15739967">0</span>
+          <span class="stat-label">Reviews</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="876145">0</span>
+          <span class="stat-label">Users</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 2: COLLECTIVE MOOD (Streamgraph) ─────────────────── -->
+  <section id="mood" class="narrative-section dark-bg">
+    <div class="scrolly-container">
+      <div class="scrolly-graphic">
+        <div id="streamgraph-container" class="chart-container">
+          <h3 class="chart-title">Genre Popularity Over Time (2010–2017)</h3>
+          <div id="streamgraph"></div>
+          <p class="chart-caption">
+            Each layer represents a genre's share of highly-rated books.
+            Hover to inspect; vertical markers denote world events.
+          </p>
+        </div>
+      </div>
+      <!--
+      <div class="scrolly-text">
+        <div class="step" data-step="1">
+          <p>
+            In ordinary years, genre shares are remarkably stable. Romance
+            and Mystery dominate, together accounting for over 40% of
+            highly-rated reads.
+          </p>
+        </div>
+        <div class="step" data-step="2">
+          <p>
+            <strong>2016:</strong> After the U.S. presidential election,
+            dystopian fiction surges. Orwell's <em>1984</em> climbs
+            bestseller lists. Our data captures this as a spike in the
+            Science Fiction &amp; Fantasy layer.
+          </p>
+        </div>
+        <div class="step" data-step="3">
+          <p>
+            Meanwhile, Self-Help and Psychology titles see a steady rise
+            from 2014 onward&thinsp;—&thinsp;possibly reflecting growing
+            cultural attention to mental health and wellness.
+          </p>
+        </div>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- ─── SECTION 3: RATING DRIFT (Line chart) ────────────────────── -->
+  <section id="drift" class="narrative-section">
+    <div class="text-column">
+      <h2>Do Readers Get Harsher Over Time?</h2>
+      <p>
+        We track individual users who have rated at least 30&nbsp;books and
+        plot their average rating as a function of how many books they've
+        read. The result: a clear downward drift.
+      </p>
+      <p>
+        Power readers&thinsp;—&thinsp;those with 200+&thinsp;books&thinsp;—&thinsp;rate
+        roughly <strong>0.3&nbsp;stars lower</strong> on average than when
+        they first started reviewing.
+      </p>
+    </div>
+    <div class="viz-column">
+      <div id="drift-container" class="chart-container">
+        <h3 class="chart-title">Average Rating by Books Read</h3>
+        <div id="drift-chart"></div>
+        <p class="chart-caption">
+          Each point shows the mean rating at that reading milestone.
+          Shaded area is ±1 std deviation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 4: ASPIRATION VS REALITY (Diverging bar) ────────── -->
+  <section id="aspiration" class="narrative-section dark-bg stacked">
+    <div class="text-column full-width">
+      <h2>What We Want to Read vs. What We Actually Read</h2>
+      <p>
+        Goodreads lets users shelf books as "to-read" without ever opening
+        them. By comparing shelf-to-read counts with actual read-through
+        rates, we expose a fascinating gap.
+      </p>
+      <p>
+        <strong>Classic Literature</strong> has the highest aspiration-to-reality
+        gap&thinsp;—&thinsp;heavily shelved, rarely finished. Meanwhile,
+        <strong>Romance</strong> readers follow through at nearly twice the
+        rate of any other genre.
+      </p>
+    </div>
+    <div class="viz-column full-width">
+      <div id="aspiration-container" class="chart-container">
+        <h3 class="chart-title">Aspiration vs. Reality by Genre</h3>
+        <div id="aspiration-chart"></div>
+        <p class="chart-caption">
+          Left bars = shelved "to-read"; right bars = actually read.
+          Gap reveals which genres are aspirationally hoarded.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER: ABOUT ─────────────────────────────────────────────── -->
+  <footer id="about" class="site-footer">
+    <h2>About This Project</h2>
+    <p>
+      Created for <strong>COM-480 Data Visualization</strong> at EPFL (Spring 2026).
+    </p>
+    <table class="team-table">
+      <thead><tr><th>Team Member</th><th>SCIPER</th></tr></thead>
+      <tbody>
+        <tr><td>Galanopoulou Rafaila</td><td>388285</td></tr>
+        <tr><td>Migliorelli Claudio</td><td>406790</td></tr>
+        <!--<tr><td>Poorsarvi Tehrani Pooria</td><td>390753</td></tr>-->
+        <tr><td>Poupakis Alexandros</td><td>387587</td></tr>
+      </tbody>
+    </table>
+    <p>
+      Data source:
+      <a href="https://mengtingwan.github.io/data/goodreads.html" target="_blank">
+        UCSD Book Graph
+      </a> (Wan &amp; McAuley, 2018/2019).
+    </p>
+  </footer>
+
+  <!-- ─── SCRIPTS ──────────────────────────────────────────────────── -->
+  <script src="js/config.js"></script>
+  <script src="js/streamgraph.js"></script>
+  <script src="js/drift.js"></script>
+  <script src="js/aspiration.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

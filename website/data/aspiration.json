@@ -1,0 +1,52 @@
+[
+ {
+  "genre": "Young Adult",
+  "shelved": 59.8,
+  "read": 40.2
+ },
+ {
+  "genre": "Non-Fiction",
+  "shelved": 55.3,
+  "read": 44.7
+ },
+ {
+  "genre": "Fiction",
+  "shelved": 54.7,
+  "read": 45.3
+ },
+ {
+  "genre": "Fantasy & Paranormal",
+  "shelved": 53.6,
+  "read": 46.4
+ },
+ {
+  "genre": "Mystery & Thriller",
+  "shelved": 53.0,
+  "read": 47.0
+ },
+ {
+  "genre": "History & Biography",
+  "shelved": 53.0,
+  "read": 47.0
+ },
+ {
+  "genre": "Poetry",
+  "shelved": 51.6,
+  "read": 48.4
+ },
+ {
+  "genre": "Romance",
+  "shelved": 51.3,
+  "read": 48.7
+ },
+ {
+  "genre": "Children",
+  "shelved": 36.5,
+  "read": 63.5
+ },
+ {
+  "genre": "Comics & Graphic",
+  "shelved": 35.1,
+  "read": 64.9
+ }
+]
