@@ -1,0 +1,130 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\definecolor{accent}{HTML}{E94560}
+\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=accent}
+
+\titleformat{\section}{\large\bfseries\sffamily}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries\sffamily}{}{0pt}{}
+\titlespacing*{\section}{0pt}{1em}{0.4em}
+\titlespacing*{\subsection}{0pt}{0.6em}{0.2em}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4em}
+
+\begin{document}
+
+\begin{center}
+  {\Large\sffamily\bfseries What 15\,Million Readers Reveal\\About the Human Condition}\\[0.5em]
+  {\normalsize COM-480 Data Visualization --- EPFL, Spring 2026 --- Milestone~2}\\[0.3em]
+  {\small
+    Galanopoulou Rafaila (388285)\\ 
+    Migliorelli Claudio (406790)\\
+    Poupakis Alexandros (387587)
+  }
+\end{center}
+
+\vspace{0.2em}
+\hrule
+\vspace{0.6em}
+
+% ──────────────────────────────────────────────────────────────────
+\section{What We Want to Build}
+
+We want to build a scrollytelling website that tells a story about how people read. The idea is simple: take a massive dataset of reading behavior and turn it into something anyone can explore and understand---no statistics background needed.
+
+Our data source is the UCSD Book Graph, which contains 2.36 million books, 229 million user--book interactions, and 15.7 million written reviews. We ask three questions:
+
+\begin{enumerate}[leftmargin=1.5em, itemsep=2pt]
+  \item \textbf{Does the world shape what we read?} We look at how genre popularity shifts over time and whether those shifts line up with real-world events like elections or crises.
+  \item \textbf{Do readers get pickier over time?} We track how people's average ratings change as they read more books.
+  \item \textbf{Do we read what we say we want to read?} We compare how often genres get shelved as ``to-read'' versus how often they actually get read.
+\end{enumerate}
+
+The style is inspired by data journalism sites like \textit{The Pudding}---we want the reader to scroll through a narrative where the charts appear naturally as part of the story.
+
+% ──────────────────────────────────────────────────────────────────
+\section{Visualizations and Tools}
+
+We have five visualizations planned. The look and feel (colors, fonts, layout) will likely change before the final version.
+
+\begin{table}[h!]
+\centering\small
+\begin{tabular}{@{}p{0.18\textwidth} p{0.38\textwidth} p{0.18\textwidth} p{0.16\textwidth}@{}}
+\toprule
+\textbf{Chart} & \textbf{What it shows} & \textbf{Tools} \\
+\midrule
+Genre Streamgraph &
+  How genre shares change quarter by quarter (2010--2017). Hovering highlights one genre. &
+  D3.js, Scrollama  \\[3pt]
+Event Annotations &
+  Vertical markers on the streamgraph for world events (e.g.\ elections, cultural moments). Scroll-triggered. &
+  D3.js, Scrollama  \\[3pt]
+Rating Drift &
+  Average rating vs.\ number of books read, for active users. Shows a downward trend with a confidence band. &
+  D3.js \\[3pt]
+Aspiration Bars &
+  Diverging bar chart: shelved-as-to-read rate on one side, actual reading rate on the other. Sorted by gap. &
+  D3.js  \\[3pt]
+Summary Counters &
+  Animated numbers (books, interactions, reviews, users) that count up as you scroll past them. &
+  Vanilla JS  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ──────────────────────────────────────────────────────────────────
+\section{What We Need vs.\ What Would Be Nice}
+
+\subsection{Core}
+\begin{itemize}[leftmargin=1.5em, itemsep=1pt]
+  \item Scrollytelling page with smooth scroll-triggered transitions
+  \item Genre streamgraph with event markers and tooltips
+  \item Rating drift chart with trend line and confidence band
+  \item Aspiration vs.\ reality diverging bars
+  \item Animated dataset counters
+  \item Data pipeline that turns the raw 11\,GB dataset into small JSON files the website can load
+\end{itemize}
+
+\subsection{Nice to have}
+\begin{itemize}[leftmargin=1.5em, itemsep=1pt]
+  \item Word clouds from review text showing emotional language per genre 
+  \item A ``pick a reader type'' explorer showing individual trajectories
+  \item Book similarity network clustered by genre 
+  \item Play button to animate the streamgraph over time 
+  \item Geographic heatmap of genre preferences 
+\end{itemize}
+
+% ──────────────────────────────────────────────────────────────────
+\section{Current Prototype}
+
+The website is in the \texttt{website/} directory of the repository. It already works with real data---we run a Python script that samples roughly 10\% of the dataset, aggregates it, and writes three JSON files (under 50\,KB total) that D3 loads directly. All five visualizations are functional.
+
+We have deployed our initial website as a GitHub Page in our Github repository. The URL is \url{https://com-480-data-visualization.github.io/CARPA/website/}.
+
+\textbf{What still needs work for Milestone~3:} process the full dataset instead of a sample; write better narrative text for the scroll sections; polish the visual theme; pick and implement one or two of the ``nice to have'' ideas listed above.
+
+% ──────────────────────────────────────────────────────────────────
+\section{Handling the Data at Scale}
+
+The full dataset is 11\,GB. The website itself is fast---it only loads tiny pre-aggregated JSON files. The slow part is the one-time preprocessing that creates those files. Right now we sample $\sim$10\% and it takes about 3 minutes. Processing everything with pandas would take 30+ minutes. We are considering three options:
+
+\begin{enumerate}[leftmargin=1.5em, itemsep=2pt]
+  \item \textbf{Switch to DuckDB or Polars}---columnar engines that are 5--10$\times$ faster than pandas on this kind of scan-and-aggregate workload.
+  \item \textbf{Convert to Parquet first}---a one-time conversion that makes all subsequent queries near-instant.
+  \item \textbf{Just sample more}---going from 10\% to 50\% still runs in reasonable time and the aggregated results are statistically stable.
+\end{enumerate}
+
+None of these change the website code, only the offline preprocessing step.
+
+\end{document}
