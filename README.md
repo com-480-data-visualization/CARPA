@@ -165,17 +165,6 @@ The style is inspired by data journalism sites like *The Pudding*.
 
 **Data processing at scale:** the website loads tiny pre-aggregated JSON, so it's always fast. The offline preprocessing currently samples ~10% and runs in ~3 minutes. For the full dataset we're considering: (a) switching to DuckDB/Polars for 5–10× speedup, (b) converting to Parquet for near-instant queries, or (c) increasing the sample to 50%+.
 
-### Testing the website
-
-To preview the website on your machine, start a local server from the `website/` directory:
-
-```bash
-cd website
-python3 -m http.server
-```
-
-Once the server is running, open `http://localhost:8000` in your browser.
-
 <!-- OLD Milestone 2 text:
 **Prototype status:** All five visualizations are implemented and functional with **mock data**. The prototype is deployed via GitHub Pages. Visual themes (colors, typography, layout) may evolve before the final submission.
 
