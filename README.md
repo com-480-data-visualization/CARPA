@@ -38,10 +38,10 @@
 
 ```bash
 # Download data (~11 GB)
-python download_data.py
+python src/download_data.py
 
 # Run EDA notebook
-jupyter notebook eda_ucsd_book_graph.ipynb
+jupyter notebook src/eda_ucsd_book_graph.ipynb
 
 # Serve the website locally
 cd website && python3 -m http.server 8765
