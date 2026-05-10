@@ -1,8 +1,8 @@
 [
  {
   "genre": "Young Adult",
-  "shelved": 59.8,
-  "read": 40.2
+  "shelved": 59.4,
+  "read": 40.6
  },
  {
   "genre": "Non-Fiction",
@@ -11,8 +11,8 @@
  },
  {
   "genre": "Fiction",
-  "shelved": 54.7,
-  "read": 45.3
+  "shelved": 54.8,
+  "read": 45.2
  },
  {
   "genre": "Fantasy & Paranormal",
@@ -21,23 +21,23 @@
  },
  {
   "genre": "Mystery & Thriller",
-  "shelved": 53.0,
-  "read": 47.0
+  "shelved": 52.9,
+  "read": 47.1
  },
  {
   "genre": "History & Biography",
-  "shelved": 53.0,
-  "read": 47.0
+  "shelved": 52.9,
+  "read": 47.1
  },
  {
   "genre": "Poetry",
-  "shelved": 51.6,
-  "read": 48.4
+  "shelved": 51.7,
+  "read": 48.3
  },
  {
   "genre": "Romance",
-  "shelved": 51.3,
-  "read": 48.7
+  "shelved": 51.2,
+  "read": 48.8
  },
  {
   "genre": "Children",
@@ -46,7 +46,7 @@
  },
  {
   "genre": "Comics & Graphic",
-  "shelved": 35.1,
-  "read": 64.9
+  "shelved": 34.8,
+  "read": 65.2
  }
 ]
