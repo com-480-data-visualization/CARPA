@@ -17,7 +17,7 @@
     { date: new Date(2012, 10, 1), label: "Obama re-elected" },
     { date: new Date(2014, 6, 1), label: "ISIS rise" },
     { date: new Date(2016, 10, 1), label: "Trump elected" },
-    { date: new Date(2017, 0, 1), label: "1984 sales spike" },
+    // { date: new Date(2017, 0, 1), label: "1984 sales spike" },
   ];
 
   function quarterToDate(q) {

@@ -38,10 +38,13 @@
 
 ```bash
 # Download data (~11 GB)
-python download_data.py
+python src/download_data.py
 
 # Run EDA notebook
-jupyter notebook eda_ucsd_book_graph.ipynb
+jupyter notebook src/eda_ucsd_book_graph.ipynb
+
+# Preprocess data for website
+python src/preprocess_for_website.py
 
 # Serve the website locally
 cd website && python3 -m http.server 8765
@@ -133,7 +136,7 @@ Our project occupies a novel intersection: it applies the *scale* of the UCSD Bo
 <!-- > - What source of inspiration do you take? Visualizations that you found on other websites or magazines (might be unrelated to your data). -->
 <!-- > - In case you are using a dataset that you have already explored in another context (ML or ADA course, semester project...), you are required to share the report of that work to outline the differences with the submission for this class. -->
 
-## Milestone 2 (1st May, 5pm)
+## Milestone 2 (17th April, 5pm)
 
 **10% of the final grade**
 
