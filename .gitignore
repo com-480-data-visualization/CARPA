@@ -27,3 +27,6 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+/doc/process_book.pdf
+/milestone3_subtasks_plan.txt
+/doc/process_book.md

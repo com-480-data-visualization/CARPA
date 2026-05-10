@@ -27,29 +27,85 @@
 ├── src/                  # Python modules for data analysis
 │   ├── data_loading.py   # File paths, loaders, genre mapping
 │   ├── analysis.py       # Interaction scanning, rating stats, temporal analysis
+│   ├── download_data.py  # Downloads the UCSD Book Graph raw files
+│   ├── preprocess_for_website.py  # Generates website/data/*.json
 │   └── plotting.py       # Matplotlib/seaborn chart functions
 ├── data/                 # UCSD Book Graph data files (~11 GB, not committed)
-├── download_data.py      # Script to download the full dataset
-├── preprocess_for_website.py  # Generates website/data/*.json from raw data
-└── eda_ucsd_book_graph.ipynb  # EDA notebook (imports from src/)
+└── src/eda_ucsd_book_graph.ipynb  # EDA notebook (imports from src/)
 ```
 
 ## Quick Start
 
+The committed `website/data/*.json` files are small preprocessed aggregates, so
+the website can be run locally without downloading the raw 11 GB UCSD dataset.
+
+### Run the Website Locally
+
 ```bash
-# Download data (~11 GB)
-python src/download_data.py
-
-# Run EDA notebook
-jupyter notebook src/eda_ucsd_book_graph.ipynb
-
-# Preprocess data for website
-python src/preprocess_for_website.py
-
-# Serve the website locally
-cd website && python3 -m http.server 8765
+cd website
+python3 -m http.server 8765
 # Open http://localhost:8765
 ```
+
+The page loads D3, Scrollama, and the intersection observer polyfill from CDNs,
+so an internet connection is needed unless those assets are already cached.
+
+### Run with Docker
+
+```bash
+docker build -t carpa-website .
+docker run --rm -p 8765:80 carpa-website
+# Open http://localhost:8765
+```
+
+Stop the container with `Ctrl-C`.
+
+If your Docker installation includes Compose, this equivalent command also
+works:
+
+```bash
+docker compose up --build
+```
+
+Then stop it with `Ctrl-C` and clean up with `docker compose down`.
+
+The Docker image uses a pinned nginx base image and serves only the static
+`website/` folder. The raw `data/` directory is excluded from the build context.
+The page still loads D3, Scrollama, and the intersection observer polyfill from
+CDNs at runtime.
+
+### Regenerate Website Data
+
+```bash
+# Optional: create a local analysis environment
+python3 -m venv .venv
+source .venv/bin/activate
+pip install pandas numpy jupyter matplotlib seaborn
+
+# Download raw data (~11 GB into data/)
+python src/download_data.py
+
+# Check whether required raw files are present
+python src/download_data.py --check
+
+# Generate website/data/streamgraph.json, drift.json, and aspiration.json
+python src/preprocess_for_website.py
+
+# Optional: run the EDA notebook
+jupyter notebook src/eda_ucsd_book_graph.ipynb
+```
+
+The preprocessing script reads the full raw files from `data/`, samples the
+reviews/interactions for speed, and writes compact JSON files under
+`website/data/`. These generated JSON files are the only data files required by
+the deployed website.
+
+## Reports
+
+- Milestone 2 report: [`doc/milestone2_report.pdf`](doc/milestone2_report.pdf)
+- Milestone 3 process book draft: [`doc/process_book.md`](doc/process_book.md)
+- Milestone 3 process book PDF: [`doc/process_book.pdf`](doc/process_book.pdf)
+  (final export path)
 
 ---
 

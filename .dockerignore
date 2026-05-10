@@ -1,0 +1,26 @@
+.git
+.agents
+.codex
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+*.egg-info
+*.eggs
+
+# The raw UCSD Book Graph files are large and are not needed in the website image.
+data
+
+# Website preprocessing and report sources are not part of the static image.
+src
+doc
+*.ipynb
+
+# Local/editor files.
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+*.swp
+*.swo

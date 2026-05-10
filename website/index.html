@@ -77,9 +77,32 @@
         <div id="streamgraph-container" class="chart-container">
           <h3 class="chart-title">Genre Popularity Over Time (2010–2017)</h3>
           <div id="streamgraph"></div>
+          <div class="streamgraph-event-controls" aria-label="Event highlights">
+            <button type="button" class="streamgraph-event-button is-active" data-streamgraph-reset aria-pressed="true">
+              <span>All genres</span>
+              <span class="streamgraph-event-button-value">2010–2017 baseline</span>
+            </button>
+            <button type="button" class="streamgraph-event-button" data-streamgraph-event-id="arab-spring" aria-pressed="false">
+              <span>Arab Spring</span>
+              <span class="streamgraph-event-button-value">Non-Fiction</span>
+            </button>
+            <button type="button" class="streamgraph-event-button" data-streamgraph-event-id="obama-reelected" aria-pressed="false">
+              <span>Obama re-elected</span>
+              <span class="streamgraph-event-button-value">Romance</span>
+            </button>
+            <button type="button" class="streamgraph-event-button" data-streamgraph-event-id="isis-rise" aria-pressed="false">
+              <span>ISIS rise</span>
+              <span class="streamgraph-event-button-value">Mystery &amp; Thriller</span>
+            </button>
+            <button type="button" class="streamgraph-event-button" data-streamgraph-event-id="trump-elected" aria-pressed="false">
+              <span>Trump elected</span>
+              <span class="streamgraph-event-button-value">Non-Fiction</span>
+            </button>
+          </div>
+          <p id="streamgraph-event-summary" class="streamgraph-event-summary" aria-live="polite"></p>
           <p class="chart-caption">
             Each layer represents a genre's share of highly-rated books.
-            Hover to inspect; vertical markers denote world events.
+            Hover to inspect; event markers and controls highlight linked genre shifts.
           </p>
         </div>
       </div>
@@ -144,15 +167,18 @@
     <div class="text-column full-width">
       <h2>What We Want to Read vs. What We Actually Read</h2>
       <p>
-        Goodreads lets users shelf books as "to-read" without ever opening
-        them. By comparing shelf-to-read counts with actual read-through
-        rates, we expose a fascinating gap.
+        Goodreads separates intention from follow-through: users can shelf a
+        book as "to-read" long before it becomes an actual read. We compare
+        each genre's share of to-read shelf activity with its share of read
+        interactions, then sort by the percentage-point gap.
       </p>
       <p>
-        <strong>Classic Literature</strong> has the highest aspiration-to-reality
-        gap&thinsp;—&thinsp;heavily shelved, rarely finished. Meanwhile,
-        <strong>Romance</strong> readers follow through at nearly twice the
-        rate of any other genre.
+        <strong>Young Adult</strong> shows the largest intent-heavy gap in the
+        current aggregate, while <strong>Children</strong> and
+        <strong>Comics &amp; Graphic</strong> flip the pattern: they are more
+        often logged as read than parked for later. This is a proxy for
+        behavior, not a completion rate, because Goodreads shelves overlap and
+        only capture users who chose to log their books.
       </p>
     </div>
     <div class="viz-column full-width">
@@ -160,8 +186,8 @@
         <h3 class="chart-title">Aspiration vs. Reality by Genre</h3>
         <div id="aspiration-chart"></div>
         <p class="chart-caption">
-          Left bars = shelved "to-read"; right bars = actually read.
-          Gap reveals which genres are aspirationally hoarded.
+          Left bars show shelved "to-read" percentages; right bars show actual
+          read percentages. Gap labels are to-read minus read percentage points.
         </p>
       </div>
     </div>
