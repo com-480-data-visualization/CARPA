@@ -181,9 +181,43 @@ To deploy the website:
 4. Alternatively, use the **`gh-pages`** branch: copy `website/` contents to root of a `gh-pages` branch
 -->
 
-## Milestone 3 (29th May, 5pm)
+## Milestone 3 (Thursday 28th May, 5pm)
 
-**80% of the final grade**
+**Weight:** 80% of the final grade
+
+For the final milestone, you need to create a cool, interactive, and sufficiently
+complex D3.js (and other) data visualization on the dataset you chose. Tell a data
+story and explain it to the targeted audience. Create a process book that details
+how you got there, from the original idea to the final product.
+
+### Deliverables
+
+1. **GitHub repository with a README**
+   - Host the code and data on GitHub. If the data is too big, link to cloud
+     storage.
+   - Include the process book as a PDF file.
+   - Add a README file that explains the technical setup and intended usage.
+   - Keep the code clean, manageable, and aligned with the latest practices.
+2. **Screencast**
+   - Demonstrate what you can do with your visualization in a fun, engaging, and
+     impactful manner.
+   - Talk about your main contributions rather than technical details.
+   - Keep the video to 2 minutes or less.
+3. **Process book (max 8 pages)**
+   - Describe the path you took to obtain the final result.
+   - Explain the challenges that you faced and the design decisions that you took.
+   - Reuse the sketches/plans that you made for the first milestone, expanding
+     them and explaining the changes.
+   - Care about the visual/design of this report.
+   - Include a peer assessment with a breakdown of the parts of the project
+     completed by each team member.
+
+### Grading
+
+- **Visualization:** 35%
+- **Technical Implementation:** 15%
+- **Screencast:** 25%
+- **Process book:** 25%
 
 
 ## Late policy
