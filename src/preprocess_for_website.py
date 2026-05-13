@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
 Preprocess UCSD Book Graph data into small JSON files for the website.
-Uses subsets/sampling for speed (~2-5 min total).
+Uses subsets/sampling for speed and keeps the committed rating-drift aggregate
+by default. Set REBUILD_DRIFT=1 to recompute the drift aggregate from raw dated
+review records.
 
 Outputs (in website/data/):
   - streamgraph.json   : genre shares by quarter (2010-2017)
@@ -33,6 +35,7 @@ REVIEW_SAMPLE = 2_000_000
 BOOK_SAMPLE = 500_000
 DRIFT_MIN_REVIEWS = 30
 DRIFT_MAX_N = 250
+REBUILD_DRIFT = os.getenv("REBUILD_DRIFT", "").lower() in {"1", "true", "yes"}
 DRIFT_REVIEW_LIMIT = os.getenv("DRIFT_REVIEW_LIMIT")
 DRIFT_REVIEW_LIMIT = int(DRIFT_REVIEW_LIMIT) if DRIFT_REVIEW_LIMIT else None
 
@@ -204,6 +207,14 @@ def iter_review_rating_events(limit=None):
 
 def build_drift():
     """Rating drift from chronologically ordered, dated review ratings."""
+    out = OUT_DIR / "drift.json"
+    should_rebuild = REBUILD_DRIFT or DRIFT_REVIEW_LIMIT is not None or not out.exists()
+    if not should_rebuild:
+        print("\n=== RATING DRIFT (using committed aggregate) ===")
+        print(f"  Kept: {out}")
+        print("  Set REBUILD_DRIFT=1 to recompute from raw dated review records.")
+        return
+
     limit_text = f"first {DRIFT_REVIEW_LIMIT:,}" if DRIFT_REVIEW_LIMIT else "all"
     print(f"\n=== RATING DRIFT ({limit_text} dated review records) ===")
 
@@ -261,7 +272,6 @@ def build_drift():
             "count": len(rats),
         })
 
-    out = OUT_DIR / "drift.json"
     json.dump(data, open(out, "w"), indent=1)
     print(f"  Included users after date parsing: {included_users:,}")
     print(f"  Written: {out} ({len(data)} points)")

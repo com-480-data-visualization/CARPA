@@ -1,4 +1,4 @@
-// Rating Drift - longitudinal Goodreads rating explorer.
+// Rating Drift - interactive explorer over pre-aggregated Goodreads ratings.
 (function () {
   const chartSelector = "#drift-chart";
   const scrubberSelector = "#drift-scrubber";

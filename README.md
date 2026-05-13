@@ -88,20 +88,27 @@ python src/download_data.py
 # Check whether required raw files are present
 python src/download_data.py --check
 
-# Generate website/data/streamgraph.json, drift.json, and aspiration.json
+# Fast default: regenerate sampled streamgraph/aspiration data and keep the
+# committed rating-drift aggregate
 python src/preprocess_for_website.py
+
+# Optional, slower: rebuild website/data/drift.json from raw dated reviews
+REBUILD_DRIFT=1 python src/preprocess_for_website.py
 
 # Optional: run the EDA notebook
 jupyter notebook src/eda_ucsd_book_graph.ipynb
 ```
 
-The preprocessing script reads the raw files from `data/` and writes compact
-JSON files under `website/data/`. The rating-drift plot is regenerated from the
-full `goodreads_reviews_dedup.json.gz` file: it keeps only real ratings with a
-usable timestamp, orders each qualifying user by `read_at` with `date_added` as
-fallback, and includes users with at least 30 dated ratings. Streamgraph and
-aspiration aggregates still use documented samples for speed. These generated
-JSON files are the only data files required by the deployed website.
+The website always reads compact aggregate JSON files from `website/data/`; it
+never scans the raw UCSD files in the browser. The rating-drift plot uses the
+committed `website/data/drift.json` aggregate by default, which keeps local
+preprocessing fast and reproducible. That aggregate was generated from real
+Goodreads review records with usable timestamps, ordered per user by `read_at`
+with `date_added` as fallback, and filtered to users with at least 30 dated
+ratings. Set `REBUILD_DRIFT=1` only when you intentionally want to rescan the
+raw review file and overwrite the aggregate. Streamgraph and aspiration
+aggregates still use documented samples for speed. These generated JSON files
+are the only data files required by the deployed website.
 
 ## Reports
 
