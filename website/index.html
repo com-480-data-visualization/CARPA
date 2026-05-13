@@ -138,25 +138,73 @@
   <!-- ─── SECTION 3: RATING DRIFT (Line chart) ────────────────────── -->
   <section id="drift" class="narrative-section">
     <div class="text-column">
-      <h2>Do Readers Get Harsher Over Time?</h2>
+      <h2>Do Reviewers Rate More Critically Over Time?</h2>
       <p>
-        We track individual users who have rated at least 30&nbsp;books and
-        plot their average rating as a function of how many books they've
-        read. The result: a clear downward drift.
+        We estimate rating drift with a longitudinal cohort of Goodreads
+        reviewers from the UCSD Book Graph. The analysis includes users with
+        at least 30&nbsp;dated ratings, orders each user's observations by
+        <code>read_at</code> when available and <code>date_added</code>
+        otherwise, and then computes the mean rating at each chronological
+        position in the review sequence.
       </p>
       <p>
-        Power readers&thinsp;—&thinsp;those with 200+&thinsp;books&thinsp;—&thinsp;rate
-        roughly <strong>0.3&nbsp;stars lower</strong> on average than when
-        they first started reviewing.
+        Across 15.2&nbsp;million usable timestamped ratings from
+        94,199&nbsp;qualifying reviewers, the mean rating falls from
+        <strong>4.10</strong> at the first dated rating to
+        <strong>3.84</strong> at position&nbsp;250, a
+        <strong>-0.26-star aggregate shift</strong>. This pattern is reported
+        as descriptive evidence of platform-level rating behavior, not as a
+        causal claim that individual readers become inherently more critical.
       </p>
     </div>
     <div class="viz-column">
       <div id="drift-container" class="chart-container">
-        <h3 class="chart-title">Average Rating by Books Read</h3>
+        <h3 class="chart-title">Longitudinal Rating Drift Among Active Reviewers</h3>
+        <div id="drift-dashboard" class="drift-dashboard" aria-live="polite">
+          <div class="drift-stage-controls" role="group" aria-label="Chronological rating positions">
+            <button type="button" class="drift-stage-button" data-drift-target="1">
+              First rating
+            </button>
+            <button type="button" class="drift-stage-button" data-drift-target="30">
+              Rating 30
+            </button>
+            <button type="button" class="drift-stage-button" data-drift-target="100">
+              Rating 100
+            </button>
+            <button type="button" class="drift-stage-button" data-drift-target="250">
+              Rating 250
+            </button>
+          </div>
+          <div class="drift-stat-strip">
+            <div class="drift-stat">
+              <span class="drift-stat-label">Sequence position</span>
+              <strong id="drift-selected-book">#250</strong>
+            </div>
+            <div class="drift-stat">
+              <span class="drift-stat-label">Mean<br />rating</span>
+              <strong id="drift-selected-rating">3.84</strong>
+            </div>
+            <div class="drift-stat">
+              <span class="drift-stat-label">Change from first</span>
+              <strong id="drift-selected-drop">-0.26</strong>
+            </div>
+            <div class="drift-stat">
+              <span class="drift-stat-label">Contributing users</span>
+              <strong id="drift-selected-count">11,545</strong>
+            </div>
+          </div>
+        </div>
         <div id="drift-chart"></div>
+        <div class="drift-scrubber-row">
+          <span id="drift-scrubber-min">#1</span>
+          <input id="drift-scrubber" type="range" min="1" max="250" value="250" step="1" aria-label="Chronological rating position" />
+          <span id="drift-scrubber-max">#250</span>
+        </div>
         <p class="chart-caption">
-          Each point shows the mean rating at that reading milestone.
-          Shaded area is ±1 std deviation.
+          Line: mean rating at each chronological rating position. Band: plus
+          or minus one standard deviation. Red area: difference from the
+          first-rating baseline. Later positions include fewer users because
+          not every reviewer reaches every milestone.
         </p>
       </div>
     </div>

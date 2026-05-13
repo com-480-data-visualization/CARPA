@@ -5,17 +5,19 @@ Uses subsets/sampling for speed (~2-5 min total).
 
 Outputs (in website/data/):
   - streamgraph.json   : genre shares by quarter (2010-2017)
-  - drift.json         : avg rating by nth-book-read
+  - drift.json         : avg rating by nth dated review rating
   - aspiration.json    : shelved-to-read vs actually-read rates by genre
 """
 
 import gzip
 import json
+import os
+import re
+import calendar
 from collections import Counter, defaultdict
 from pathlib import Path
 from datetime import datetime
 
-import pandas as pd
 import numpy as np
 
 DATA_DIR = Path("data")
@@ -23,14 +25,30 @@ OUT_DIR = Path("website/data")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 GENRES_FILE = DATA_DIR / "goodreads_book_genres_initial.json.gz"
-INTERACTIONS_FILE = DATA_DIR / "goodreads_interactions.csv"
 REVIEWS_FILE = DATA_DIR / "goodreads_reviews_dedup.json.gz"
 BOOKS_FILE = DATA_DIR / "goodreads_books.json.gz"
 
-# Sample sizes
+# Sample sizes / limits
 REVIEW_SAMPLE = 2_000_000
-INTERACTION_ROWS = 20_000_000  # ~10% of full dataset
 BOOK_SAMPLE = 500_000
+DRIFT_MIN_REVIEWS = 30
+DRIFT_MAX_N = 250
+DRIFT_REVIEW_LIMIT = os.getenv("DRIFT_REVIEW_LIMIT")
+DRIFT_REVIEW_LIMIT = int(DRIFT_REVIEW_LIMIT) if DRIFT_REVIEW_LIMIT else None
+
+MONTH_NUM = {
+    "Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4,
+    "May": 5, "Jun": 6, "Jul": 7, "Aug": 8,
+    "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12,
+}
+
+REVIEW_FIELD_PATTERNS = {
+    "user_id": re.compile(r'"user_id": "([^"]+)"'),
+    "book_id": re.compile(r'"book_id": "([^"]+)"'),
+    "rating": re.compile(r'"rating": ([0-5])'),
+    "read_at": re.compile(r'"read_at": "([^"]*)"'),
+    "date_added": re.compile(r'"date_added": "([^"]*)"'),
+}
 
 TOP_GENRES = [
     "romance",
@@ -122,33 +140,115 @@ def build_streamgraph(book_to_genre):
     print(f"  Written: {out} ({len(data)} quarters)")
 
 
+def parse_goodreads_date(date_text):
+    """Parse Goodreads dates quickly into UTC epoch seconds."""
+    if not date_text:
+        return None
+    try:
+        # Example: "Sat Oct 07 00:00:00 -0700 2017"
+        parts = date_text.split()
+        month = MONTH_NUM[parts[1]]
+        day = int(parts[2])
+        hour, minute, second = (int(part) for part in parts[3].split(":"))
+        offset = parts[4]
+        year = int(parts[5])
+        sign = 1 if offset[0] == "+" else -1
+        offset_seconds = sign * (int(offset[1:3]) * 3600 + int(offset[3:5]) * 60)
+        local_seconds = calendar.timegm((year, month, day, hour, minute, second, 0, 0, 0))
+        return local_seconds - offset_seconds
+    except (IndexError, KeyError, TypeError, ValueError):
+        return None
+
+
+def regex_field(line, key):
+    match = REVIEW_FIELD_PATTERNS[key].search(line)
+    return match.group(1) if match else None
+
+
+def parse_review_rating_line(line):
+    """Extract the fields needed for drift without parsing review_text JSON."""
+    rating_text = regex_field(line, "rating")
+    if not rating_text or rating_text == "0":
+        return None
+
+    uid = regex_field(line, "user_id")
+    if not uid:
+        return None
+
+    date_text = regex_field(line, "read_at") or regex_field(line, "date_added")
+    timestamp = parse_goodreads_date(date_text)
+    if timestamp is None:
+        return None
+
+    return uid, regex_field(line, "book_id") or "", timestamp, int(rating_text)
+
+
+def iter_review_rating_events(limit=None):
+    """Yield dated rating events from Goodreads review records.
+
+    The interactions CSV does not include timestamps, so it is not a legitimate
+    source for "nth book read" ordering. Review records include dates; we use
+    read_at when available and date_added as the fallback.
+    """
+    with gzip.open(REVIEWS_FILE, "rt", encoding="utf-8") as f:
+        for n, line in enumerate(f, 1):
+            if limit is not None and n > limit:
+                break
+
+            parsed = parse_review_rating_line(line)
+            if parsed is None:
+                continue
+            uid, book_id, timestamp, rating = parsed
+            yield n, uid, book_id, timestamp, rating
+
+
 def build_drift():
-    """Rating drift from first {INTERACTION_ROWS} interaction rows."""
-    print(f"\n=== RATING DRIFT (sampling {INTERACTION_ROWS:,} rows) ===")
+    """Rating drift from chronologically ordered, dated review ratings."""
+    limit_text = f"first {DRIFT_REVIEW_LIMIT:,}" if DRIFT_REVIEW_LIMIT else "all"
+    print(f"\n=== RATING DRIFT ({limit_text} dated review records) ===")
 
-    user_ratings = defaultdict(list)
-    n = 0
+    user_counts = Counter()
+    scanned = 0
+    usable = 0
 
-    for chunk in pd.read_csv(INTERACTIONS_FILE, chunksize=5_000_000):
-        rated = chunk[chunk["rating"] > 0]
-        for uid, rating in zip(rated["user_id"], rated["rating"]):
-            user_ratings[uid].append(rating)
-        n += len(chunk)
-        print(f"  ... {n:,} rows")
-        if n >= INTERACTION_ROWS:
-            break
+    # First pass: identify users with enough dated ratings to form a sequence.
+    for scanned, uid, _book_id, _timestamp, _rating in iter_review_rating_events(DRIFT_REVIEW_LIMIT):
+        user_counts[uid] += 1
+        usable += 1
+        if usable % 2_000_000 == 0:
+            print(f"  ... {usable:,} usable dated ratings counted")
 
-    power_users = {uid: r for uid, r in user_ratings.items() if len(r) >= 30}
-    print(f"  Users with 30+ ratings: {len(power_users):,}")
+    power_users = {uid for uid, count in user_counts.items() if count >= DRIFT_MIN_REVIEWS}
+    print(f"  Scanned review lines: {scanned:,}")
+    print(f"  Usable dated ratings: {usable:,}")
+    print(f"  Users with {DRIFT_MIN_REVIEWS}+ dated ratings: {len(power_users):,}")
 
-    max_n = 250
+    user_events = defaultdict(list)
+    usable_power_events = 0
+
+    # Second pass: collect only the users that pass the sequence threshold.
+    for _scanned, uid, book_id, timestamp, rating in iter_review_rating_events(DRIFT_REVIEW_LIMIT):
+        if uid not in power_users:
+            continue
+        user_events[uid].append((timestamp, book_id, rating))
+        usable_power_events += 1
+        if usable_power_events % 2_000_000 == 0:
+            print(f"  ... {usable_power_events:,} dated ratings collected")
+
+    print(f"  Dated ratings for qualifying users: {usable_power_events:,}")
+
     position_ratings = defaultdict(list)
-    for rats in power_users.values():
-        for i, r in enumerate(rats[:max_n], 1):
-            position_ratings[i].append(r)
+    included_users = 0
+    for events in user_events.values():
+        if len(events) < DRIFT_MIN_REVIEWS:
+            continue
+        included_users += 1
+        events.sort(key=lambda item: (item[0], item[1]))
+        for i, (_timestamp, _book_id, rating) in enumerate(events[:DRIFT_MAX_N], 1):
+            position_ratings[i].append(rating)
 
     data = []
-    for i in range(1, max_n + 1):
+    for i in range(1, DRIFT_MAX_N + 1):
         rats = position_ratings.get(i, [])
         if len(rats) < 50:
             continue
@@ -163,12 +263,13 @@ def build_drift():
 
     out = OUT_DIR / "drift.json"
     json.dump(data, open(out, "w"), indent=1)
+    print(f"  Included users after date parsing: {included_users:,}")
     print(f"  Written: {out} ({len(data)} points)")
 
 
 def build_aspiration(book_to_genre):
     """Aspiration vs reality from first {BOOK_SAMPLE} books + sampled interactions."""
-    print(f"\n=== ASPIRATION (sampling {BOOK_SAMPLE:,} books + {INTERACTION_ROWS:,} interactions) ===")
+    print(f"\n=== ASPIRATION (sampling {BOOK_SAMPLE:,} books) ===")
 
     genre_to_read_count = Counter()  # books with "to-read" shelving
     genre_book_count = Counter()     # total books per genre

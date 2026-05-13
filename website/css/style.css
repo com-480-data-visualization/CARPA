@@ -277,6 +277,242 @@ svg { width: 100%; display: block; }
   transition: opacity 0.15s;
 }
 
+/* ── Rating drift explorer ─────────────────────────────────────────── */
+#drift-container {
+  overflow: hidden;
+}
+
+.drift-dashboard {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.drift-stage-controls {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.drift-stage-button {
+  min-height: 40px;
+  border: 1px solid rgba(26,26,46,0.14);
+  border-radius: 6px;
+  background: rgba(26,26,46,0.04);
+  color: var(--text-light);
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.drift-stage-button:hover,
+.drift-stage-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(233,69,96,0.45);
+  background: rgba(233,69,96,0.08);
+  outline: none;
+}
+
+.drift-stage-button.is-active {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, rgba(233,69,96,0.16), rgba(242,163,101,0.16));
+  color: #111;
+}
+
+.drift-stat-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: linear-gradient(90deg, rgba(27,154,170,0.2), rgba(233,69,96,0.28));
+  border-top: 1px solid rgba(26,26,46,0.08);
+  border-bottom: 1px solid rgba(26,26,46,0.08);
+}
+
+.drift-stat {
+  min-width: 0;
+  padding: 0.7rem 0.65rem;
+  background: rgba(250,249,246,0.92);
+}
+
+.drift-stat-label {
+  display: block;
+  min-height: 2.2em;
+  margin-bottom: 0.18rem;
+  color: rgba(44,44,44,0.62);
+  font-family: var(--font-heading);
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.drift-stat strong {
+  display: block;
+  color: #1a1a2e;
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  line-height: 1.1;
+}
+
+#drift-chart {
+  min-height: 360px;
+}
+
+#drift-chart svg {
+  overflow: visible;
+}
+
+#drift-chart .drift-band {
+  opacity: 0.9;
+}
+
+#drift-chart .drift-baseline {
+  stroke: rgba(26,26,46,0.48);
+  stroke-dasharray: 5 5;
+  stroke-width: 1.3;
+}
+
+#drift-chart .drift-baseline-label,
+#drift-chart .drift-axis-label,
+#drift-chart .drift-callout-title,
+#drift-chart .drift-callout-change {
+  font-family: var(--font-heading);
+}
+
+#drift-chart .drift-baseline-label {
+  fill: rgba(26,26,46,0.72);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#drift-chart .drift-drop-area {
+  filter: drop-shadow(0 8px 16px rgba(233,69,96,0.16));
+}
+
+#drift-chart .drift-full-line {
+  fill: none;
+  stroke: rgba(26,26,46,0.2);
+  stroke-width: 2;
+}
+
+#drift-chart .drift-progress-line {
+  fill: none;
+  stroke: url(#drift-line-gradient);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 5px 10px rgba(233,69,96,0.3));
+}
+
+#drift-chart .drift-milestone {
+  fill: #faf9f6;
+  stroke: rgba(233,69,96,0.75);
+  stroke-width: 1.8;
+  cursor: pointer;
+}
+
+#drift-chart .drift-milestone.is-selected {
+  fill: var(--accent-soft);
+  stroke: #fff;
+  stroke-width: 2.2;
+}
+
+#drift-chart .drift-selected-line {
+  stroke: rgba(233,69,96,0.55);
+  stroke-width: 1.4;
+  stroke-dasharray: 4 4;
+}
+
+#drift-chart .drift-selected-dot {
+  fill: #fff;
+  stroke: var(--accent);
+  stroke-width: 3;
+  filter: drop-shadow(0 4px 10px rgba(233,69,96,0.45));
+}
+
+#drift-chart .drift-callout rect {
+  fill: #1a1a2e;
+  stroke: rgba(255,255,255,0.46);
+  stroke-width: 1.2;
+  filter: drop-shadow(0 8px 18px rgba(26,26,46,0.34));
+}
+
+#drift-chart .drift-callout-title {
+  fill: #fff;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#drift-chart .drift-callout-change {
+  fill: var(--accent-soft);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+#drift-chart .drift-axis-label {
+  fill: #555;
+  font-size: 12px;
+}
+
+#drift-chart .drift-focus line {
+  stroke: rgba(26,26,46,0.5);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
+#drift-chart .drift-focus circle {
+  fill: #fff;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+#drift-chart .drift-hit-area {
+  fill: transparent;
+  cursor: crosshair;
+}
+
+.drift-tooltip {
+  max-width: 210px;
+  line-height: 1.4;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+}
+
+.drift-scrubber-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 0.25rem 0 0;
+  color: rgba(44,44,44,0.64);
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.drift-scrubber-row input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.drift-empty {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  color: #666;
+  font-family: var(--font-heading);
+  text-align: center;
+}
+
+.drift-empty span {
+  max-width: 28rem;
+  font-size: 0.8rem;
+}
+
 /* ── Aspiration chart ─────────────────────────────────────────────── */
 #aspiration-chart {
   min-height: 240px;
@@ -415,6 +651,10 @@ svg { width: 100%; display: block; }
   .stats-grid { grid-template-columns: 1fr; }
   .step p { max-width: 100%; }
   .nav-link { padding: 0.5rem 0.8rem; font-size: 0.75rem; }
+  .drift-stage-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .drift-stat-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .drift-stat { padding: 0.62rem 0.58rem; }
+  #drift-chart { min-height: 330px; }
   #aspiration-container { padding: 1rem 0.75rem; }
   #aspiration-chart .aspiration-side-label,
   #aspiration-chart .aspiration-gap-heading { font-size: 11px; }

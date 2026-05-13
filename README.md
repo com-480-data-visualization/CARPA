@@ -95,10 +95,13 @@ python src/preprocess_for_website.py
 jupyter notebook src/eda_ucsd_book_graph.ipynb
 ```
 
-The preprocessing script reads the full raw files from `data/`, samples the
-reviews/interactions for speed, and writes compact JSON files under
-`website/data/`. These generated JSON files are the only data files required by
-the deployed website.
+The preprocessing script reads the raw files from `data/` and writes compact
+JSON files under `website/data/`. The rating-drift plot is regenerated from the
+full `goodreads_reviews_dedup.json.gz` file: it keeps only real ratings with a
+usable timestamp, orders each qualifying user by `read_at` with `date_added` as
+fallback, and includes users with at least 30 dated ratings. Streamgraph and
+aspiration aggregates still use documented samples for speed. These generated
+JSON files are the only data files required by the deployed website.
 
 ## Reports
 

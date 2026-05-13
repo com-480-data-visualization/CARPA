@@ -1,1752 +1,1752 @@
 [
  {
   "bookNumber": 1,
-  "avgRating": 4.2617,
-  "stdLow": 3.3504,
-  "stdHigh": 5.173,
-  "count": 547662
+  "avgRating": 4.103,
+  "stdLow": 2.9887,
+  "stdHigh": 5.2172,
+  "count": 94199
  },
  {
   "bookNumber": 2,
-  "avgRating": 4.197,
-  "stdLow": 3.2501,
-  "stdHigh": 5.1438,
-  "count": 547662
+  "avgRating": 4.0433,
+  "stdLow": 2.9311,
+  "stdHigh": 5.1555,
+  "count": 94199
  },
  {
   "bookNumber": 3,
-  "avgRating": 4.1786,
-  "stdLow": 3.2226,
-  "stdHigh": 5.1345,
-  "count": 547662
+  "avgRating": 4.0126,
+  "stdLow": 2.9033,
+  "stdHigh": 5.1218,
+  "count": 94199
  },
  {
   "bookNumber": 4,
-  "avgRating": 4.1673,
-  "stdLow": 3.2059,
-  "stdHigh": 5.1288,
-  "count": 547662
+  "avgRating": 3.9911,
+  "stdLow": 2.8858,
+  "stdHigh": 5.0964,
+  "count": 94199
  },
  {
   "bookNumber": 5,
-  "avgRating": 4.1538,
-  "stdLow": 3.1852,
-  "stdHigh": 5.1225,
-  "count": 547662
+  "avgRating": 3.9763,
+  "stdLow": 2.8748,
+  "stdHigh": 5.0779,
+  "count": 94199
  },
  {
   "bookNumber": 6,
-  "avgRating": 4.1489,
-  "stdLow": 3.179,
-  "stdHigh": 5.1187,
-  "count": 547662
+  "avgRating": 3.973,
+  "stdLow": 2.8757,
+  "stdHigh": 5.0703,
+  "count": 94199
  },
  {
   "bookNumber": 7,
-  "avgRating": 4.1424,
-  "stdLow": 3.1729,
-  "stdHigh": 5.112,
-  "count": 547662
+  "avgRating": 3.9665,
+  "stdLow": 2.8732,
+  "stdHigh": 5.0597,
+  "count": 94199
  },
  {
   "bookNumber": 8,
-  "avgRating": 4.1357,
-  "stdLow": 3.1633,
-  "stdHigh": 5.1082,
-  "count": 547662
+  "avgRating": 3.962,
+  "stdLow": 2.8739,
+  "stdHigh": 5.0501,
+  "count": 94199
  },
  {
   "bookNumber": 9,
-  "avgRating": 4.1284,
-  "stdLow": 3.1519,
-  "stdHigh": 5.105,
-  "count": 547662
+  "avgRating": 3.949,
+  "stdLow": 2.864,
+  "stdHigh": 5.0339,
+  "count": 94199
  },
  {
   "bookNumber": 10,
-  "avgRating": 4.1227,
-  "stdLow": 3.1453,
-  "stdHigh": 5.1002,
-  "count": 547662
+  "avgRating": 3.9487,
+  "stdLow": 2.8648,
+  "stdHigh": 5.0326,
+  "count": 94199
  },
  {
   "bookNumber": 11,
-  "avgRating": 4.1199,
-  "stdLow": 3.1433,
-  "stdHigh": 5.0965,
-  "count": 547662
+  "avgRating": 3.9451,
+  "stdLow": 2.8633,
+  "stdHigh": 5.0269,
+  "count": 94199
  },
  {
   "bookNumber": 12,
-  "avgRating": 4.1129,
-  "stdLow": 3.1329,
-  "stdHigh": 5.093,
-  "count": 547662
+  "avgRating": 3.9335,
+  "stdLow": 2.8475,
+  "stdHigh": 5.0195,
+  "count": 94199
  },
  {
   "bookNumber": 13,
-  "avgRating": 4.1084,
-  "stdLow": 3.127,
-  "stdHigh": 5.0897,
-  "count": 547662
+  "avgRating": 3.9376,
+  "stdLow": 2.8591,
+  "stdHigh": 5.016,
+  "count": 94199
  },
  {
   "bookNumber": 14,
-  "avgRating": 4.1051,
-  "stdLow": 3.1231,
-  "stdHigh": 5.0871,
-  "count": 547662
+  "avgRating": 3.9371,
+  "stdLow": 2.8604,
+  "stdHigh": 5.0138,
+  "count": 94199
  },
  {
   "bookNumber": 15,
-  "avgRating": 4.1023,
-  "stdLow": 3.1201,
-  "stdHigh": 5.0845,
-  "count": 547662
+  "avgRating": 3.9361,
+  "stdLow": 2.8621,
+  "stdHigh": 5.0101,
+  "count": 94199
  },
  {
   "bookNumber": 16,
-  "avgRating": 4.0966,
-  "stdLow": 3.1119,
-  "stdHigh": 5.0814,
-  "count": 547662
+  "avgRating": 3.9317,
+  "stdLow": 2.859,
+  "stdHigh": 5.0044,
+  "count": 94199
  },
  {
   "bookNumber": 17,
-  "avgRating": 4.0917,
-  "stdLow": 3.1045,
-  "stdHigh": 5.0789,
-  "count": 547662
+  "avgRating": 3.9363,
+  "stdLow": 2.8681,
+  "stdHigh": 5.0044,
+  "count": 94199
  },
  {
   "bookNumber": 18,
-  "avgRating": 4.0881,
-  "stdLow": 3.1009,
-  "stdHigh": 5.0754,
-  "count": 547662
+  "avgRating": 3.9343,
+  "stdLow": 2.8672,
+  "stdHigh": 5.0014,
+  "count": 94199
  },
  {
   "bookNumber": 19,
-  "avgRating": 4.0855,
-  "stdLow": 3.0974,
-  "stdHigh": 5.0736,
-  "count": 547662
+  "avgRating": 3.9329,
+  "stdLow": 2.8662,
+  "stdHigh": 4.9996,
+  "count": 94199
  },
  {
   "bookNumber": 20,
-  "avgRating": 4.0856,
-  "stdLow": 3.0996,
-  "stdHigh": 5.0717,
-  "count": 547662
+  "avgRating": 3.928,
+  "stdLow": 2.8573,
+  "stdHigh": 4.9987,
+  "count": 94199
  },
  {
   "bookNumber": 21,
-  "avgRating": 4.088,
-  "stdLow": 3.1032,
-  "stdHigh": 5.0728,
-  "count": 547662
+  "avgRating": 3.9272,
+  "stdLow": 2.8622,
+  "stdHigh": 4.9921,
+  "count": 94199
  },
  {
   "bookNumber": 22,
-  "avgRating": 4.0844,
-  "stdLow": 3.1006,
-  "stdHigh": 5.0683,
-  "count": 547662
+  "avgRating": 3.9309,
+  "stdLow": 2.8682,
+  "stdHigh": 4.9936,
+  "count": 94199
  },
  {
   "bookNumber": 23,
-  "avgRating": 4.0805,
-  "stdLow": 3.0943,
-  "stdHigh": 5.0667,
-  "count": 547662
+  "avgRating": 3.9256,
+  "stdLow": 2.861,
+  "stdHigh": 4.9902,
+  "count": 94199
  },
  {
   "bookNumber": 24,
-  "avgRating": 4.078,
-  "stdLow": 3.0911,
-  "stdHigh": 5.0648,
-  "count": 547662
+  "avgRating": 3.93,
+  "stdLow": 2.867,
+  "stdHigh": 4.9929,
+  "count": 94199
  },
  {
   "bookNumber": 25,
-  "avgRating": 4.0757,
-  "stdLow": 3.0905,
-  "stdHigh": 5.0608,
-  "count": 547662
+  "avgRating": 3.9277,
+  "stdLow": 2.8647,
+  "stdHigh": 4.9906,
+  "count": 94199
  },
  {
   "bookNumber": 26,
-  "avgRating": 4.0742,
-  "stdLow": 3.0898,
-  "stdHigh": 5.0586,
-  "count": 547662
+  "avgRating": 3.9246,
+  "stdLow": 2.8608,
+  "stdHigh": 4.9884,
+  "count": 94199
  },
  {
   "bookNumber": 27,
-  "avgRating": 4.0725,
-  "stdLow": 3.0893,
-  "stdHigh": 5.0556,
-  "count": 547662
+  "avgRating": 3.928,
+  "stdLow": 2.863,
+  "stdHigh": 4.9929,
+  "count": 94199
  },
  {
   "bookNumber": 28,
-  "avgRating": 4.0691,
-  "stdLow": 3.0862,
-  "stdHigh": 5.052,
-  "count": 547662
+  "avgRating": 3.9257,
+  "stdLow": 2.865,
+  "stdHigh": 4.9864,
+  "count": 94199
  },
  {
   "bookNumber": 29,
-  "avgRating": 4.0659,
-  "stdLow": 3.0823,
-  "stdHigh": 5.0496,
-  "count": 547662
+  "avgRating": 3.9192,
+  "stdLow": 2.8545,
+  "stdHigh": 4.9839,
+  "count": 94199
  },
  {
   "bookNumber": 30,
-  "avgRating": 4.0627,
-  "stdLow": 3.0788,
-  "stdHigh": 5.0465,
-  "count": 547662
+  "avgRating": 3.9267,
+  "stdLow": 2.8662,
+  "stdHigh": 4.9871,
+  "count": 94199
  },
  {
   "bookNumber": 31,
-  "avgRating": 4.0618,
-  "stdLow": 3.0785,
-  "stdHigh": 5.045,
-  "count": 540432
+  "avgRating": 3.9208,
+  "stdLow": 2.8587,
+  "stdHigh": 4.9829,
+  "count": 91999
  },
  {
   "bookNumber": 32,
-  "avgRating": 4.0584,
-  "stdLow": 3.0747,
-  "stdHigh": 5.0421,
-  "count": 533611
+  "avgRating": 3.9227,
+  "stdLow": 2.8621,
+  "stdHigh": 4.9832,
+  "count": 89867
  },
  {
   "bookNumber": 33,
-  "avgRating": 4.0555,
-  "stdLow": 3.0707,
-  "stdHigh": 5.0403,
-  "count": 526884
+  "avgRating": 3.9208,
+  "stdLow": 2.8575,
+  "stdHigh": 4.9842,
+  "count": 87880
  },
  {
   "bookNumber": 34,
-  "avgRating": 4.0508,
-  "stdLow": 3.0653,
-  "stdHigh": 5.0364,
-  "count": 520507
+  "avgRating": 3.9156,
+  "stdLow": 2.8524,
+  "stdHigh": 4.9787,
+  "count": 85852
  },
  {
   "bookNumber": 35,
-  "avgRating": 4.048,
-  "stdLow": 3.0629,
-  "stdHigh": 5.0331,
-  "count": 514158
+  "avgRating": 3.9179,
+  "stdLow": 2.8606,
+  "stdHigh": 4.9752,
+  "count": 84004
  },
  {
   "bookNumber": 36,
-  "avgRating": 4.0456,
-  "stdLow": 3.06,
-  "stdHigh": 5.0311,
-  "count": 508003
+  "avgRating": 3.9147,
+  "stdLow": 2.8609,
+  "stdHigh": 4.9684,
+  "count": 82253
  },
  {
   "bookNumber": 37,
-  "avgRating": 4.0413,
-  "stdLow": 3.0553,
-  "stdHigh": 5.0274,
-  "count": 501966
+  "avgRating": 3.9141,
+  "stdLow": 2.8561,
+  "stdHigh": 4.9722,
+  "count": 80617
  },
  {
   "bookNumber": 38,
-  "avgRating": 4.0406,
-  "stdLow": 3.0569,
-  "stdHigh": 5.0243,
-  "count": 496126
+  "avgRating": 3.9153,
+  "stdLow": 2.858,
+  "stdHigh": 4.9726,
+  "count": 78906
  },
  {
   "bookNumber": 39,
-  "avgRating": 4.0353,
-  "stdLow": 3.0486,
-  "stdHigh": 5.0219,
-  "count": 490154
+  "avgRating": 3.9112,
+  "stdLow": 2.8525,
+  "stdHigh": 4.97,
+  "count": 77399
  },
  {
   "bookNumber": 40,
-  "avgRating": 4.0347,
-  "stdLow": 3.0479,
-  "stdHigh": 5.0216,
-  "count": 484439
+  "avgRating": 3.9098,
+  "stdLow": 2.8552,
+  "stdHigh": 4.9645,
+  "count": 75916
  },
  {
   "bookNumber": 41,
-  "avgRating": 4.0362,
-  "stdLow": 3.0512,
-  "stdHigh": 5.0213,
-  "count": 478966
+  "avgRating": 3.9107,
+  "stdLow": 2.8604,
+  "stdHigh": 4.961,
+  "count": 74416
  },
  {
   "bookNumber": 42,
-  "avgRating": 4.0318,
-  "stdLow": 3.0459,
-  "stdHigh": 5.0176,
-  "count": 473454
+  "avgRating": 3.9083,
+  "stdLow": 2.8534,
+  "stdHigh": 4.9631,
+  "count": 73074
  },
  {
   "bookNumber": 43,
-  "avgRating": 4.029,
-  "stdLow": 3.0424,
-  "stdHigh": 5.0156,
-  "count": 468097
+  "avgRating": 3.8994,
+  "stdLow": 2.8388,
+  "stdHigh": 4.96,
+  "count": 71704
  },
  {
   "bookNumber": 44,
-  "avgRating": 4.0243,
-  "stdLow": 3.0369,
-  "stdHigh": 5.0116,
-  "count": 462892
+  "avgRating": 3.9009,
+  "stdLow": 2.8457,
+  "stdHigh": 4.9562,
+  "count": 70433
  },
  {
   "bookNumber": 45,
-  "avgRating": 4.0207,
-  "stdLow": 3.0339,
-  "stdHigh": 5.0075,
-  "count": 457697
+  "avgRating": 3.911,
+  "stdLow": 2.8627,
+  "stdHigh": 4.9594,
+  "count": 69185
  },
  {
   "bookNumber": 46,
-  "avgRating": 4.0216,
-  "stdLow": 3.0349,
-  "stdHigh": 5.0083,
-  "count": 452688
+  "avgRating": 3.9075,
+  "stdLow": 2.8606,
+  "stdHigh": 4.9544,
+  "count": 67986
  },
  {
   "bookNumber": 47,
-  "avgRating": 4.0154,
-  "stdLow": 3.0269,
-  "stdHigh": 5.0039,
-  "count": 447823
+  "avgRating": 3.9038,
+  "stdLow": 2.8513,
+  "stdHigh": 4.9563,
+  "count": 66833
  },
  {
   "bookNumber": 48,
-  "avgRating": 4.0167,
-  "stdLow": 3.029,
-  "stdHigh": 5.0043,
-  "count": 443063
+  "avgRating": 3.8993,
+  "stdLow": 2.844,
+  "stdHigh": 4.9546,
+  "count": 65713
  },
  {
   "bookNumber": 49,
-  "avgRating": 4.0129,
-  "stdLow": 3.026,
-  "stdHigh": 4.9999,
-  "count": 438244
+  "avgRating": 3.9032,
+  "stdLow": 2.852,
+  "stdHigh": 4.9544,
+  "count": 64658
  },
  {
   "bookNumber": 50,
-  "avgRating": 4.0123,
-  "stdLow": 3.025,
-  "stdHigh": 4.9996,
-  "count": 433629
+  "avgRating": 3.8932,
+  "stdLow": 2.8377,
+  "stdHigh": 4.9486,
+  "count": 63591
  },
  {
   "bookNumber": 51,
-  "avgRating": 4.0109,
-  "stdLow": 3.0247,
-  "stdHigh": 4.997,
-  "count": 428931
+  "avgRating": 3.902,
+  "stdLow": 2.8523,
+  "stdHigh": 4.9517,
+  "count": 62569
  },
  {
   "bookNumber": 52,
-  "avgRating": 4.0082,
-  "stdLow": 3.0226,
-  "stdHigh": 4.9937,
-  "count": 424446
+  "avgRating": 3.8939,
+  "stdLow": 2.8426,
+  "stdHigh": 4.9452,
+  "count": 61594
  },
  {
   "bookNumber": 53,
-  "avgRating": 4.0083,
-  "stdLow": 3.0217,
-  "stdHigh": 4.9948,
-  "count": 419997
+  "avgRating": 3.8946,
+  "stdLow": 2.8419,
+  "stdHigh": 4.9474,
+  "count": 60651
  },
  {
   "bookNumber": 54,
-  "avgRating": 4.0064,
-  "stdLow": 3.0207,
-  "stdHigh": 4.9921,
-  "count": 415666
+  "avgRating": 3.8994,
+  "stdLow": 2.8497,
+  "stdHigh": 4.949,
+  "count": 59717
  },
  {
   "bookNumber": 55,
-  "avgRating": 4.0032,
-  "stdLow": 3.0167,
-  "stdHigh": 4.9897,
-  "count": 411431
+  "avgRating": 3.8935,
+  "stdLow": 2.8417,
+  "stdHigh": 4.9453,
+  "count": 58802
  },
  {
   "bookNumber": 56,
-  "avgRating": 4.002,
-  "stdLow": 3.0155,
-  "stdHigh": 4.9886,
-  "count": 407242
+  "avgRating": 3.8951,
+  "stdLow": 2.8468,
+  "stdHigh": 4.9434,
+  "count": 57933
  },
  {
   "bookNumber": 57,
-  "avgRating": 3.9999,
-  "stdLow": 3.0127,
-  "stdHigh": 4.9872,
-  "count": 402994
+  "avgRating": 3.8938,
+  "stdLow": 2.8447,
+  "stdHigh": 4.9429,
+  "count": 57021
  },
  {
   "bookNumber": 58,
-  "avgRating": 3.9966,
-  "stdLow": 3.0083,
-  "stdHigh": 4.9849,
-  "count": 398978
+  "avgRating": 3.8923,
+  "stdLow": 2.8455,
+  "stdHigh": 4.9392,
+  "count": 56135
  },
  {
   "bookNumber": 59,
-  "avgRating": 3.9948,
-  "stdLow": 3.0072,
-  "stdHigh": 4.9823,
-  "count": 394930
+  "avgRating": 3.8945,
+  "stdLow": 2.8487,
+  "stdHigh": 4.9404,
+  "count": 55365
  },
  {
   "bookNumber": 60,
-  "avgRating": 3.996,
-  "stdLow": 3.0106,
-  "stdHigh": 4.9815,
-  "count": 391043
+  "avgRating": 3.8919,
+  "stdLow": 2.8402,
+  "stdHigh": 4.9436,
+  "count": 54601
  },
  {
   "bookNumber": 61,
-  "avgRating": 3.9945,
-  "stdLow": 3.0103,
-  "stdHigh": 4.9788,
-  "count": 387323
+  "avgRating": 3.8835,
+  "stdLow": 2.8343,
+  "stdHigh": 4.9327,
+  "count": 53805
  },
  {
   "bookNumber": 62,
-  "avgRating": 3.9905,
-  "stdLow": 3.0033,
-  "stdHigh": 4.9778,
-  "count": 383580
+  "avgRating": 3.8874,
+  "stdLow": 2.8383,
+  "stdHigh": 4.9366,
+  "count": 53011
  },
  {
   "bookNumber": 63,
-  "avgRating": 3.9896,
-  "stdLow": 3.0037,
-  "stdHigh": 4.9755,
-  "count": 379840
+  "avgRating": 3.8946,
+  "stdLow": 2.8508,
+  "stdHigh": 4.9384,
+  "count": 52338
  },
  {
   "bookNumber": 64,
-  "avgRating": 3.9906,
-  "stdLow": 3.0063,
-  "stdHigh": 4.9749,
-  "count": 376276
+  "avgRating": 3.8895,
+  "stdLow": 2.838,
+  "stdHigh": 4.941,
+  "count": 51629
  },
  {
   "bookNumber": 65,
-  "avgRating": 3.9876,
-  "stdLow": 3.0018,
-  "stdHigh": 4.9733,
-  "count": 372646
+  "avgRating": 3.8826,
+  "stdLow": 2.8352,
+  "stdHigh": 4.93,
+  "count": 50892
  },
  {
   "bookNumber": 66,
-  "avgRating": 3.9874,
-  "stdLow": 3.0036,
-  "stdHigh": 4.9711,
-  "count": 369270
+  "avgRating": 3.893,
+  "stdLow": 2.8478,
+  "stdHigh": 4.9382,
+  "count": 50248
  },
  {
   "bookNumber": 67,
-  "avgRating": 3.9833,
-  "stdLow": 2.9973,
-  "stdHigh": 4.9694,
-  "count": 365807
+  "avgRating": 3.8861,
+  "stdLow": 2.8395,
+  "stdHigh": 4.9328,
+  "count": 49571
  },
  {
   "bookNumber": 68,
-  "avgRating": 3.98,
-  "stdLow": 2.9914,
-  "stdHigh": 4.9686,
-  "count": 362489
+  "avgRating": 3.8775,
+  "stdLow": 2.8303,
+  "stdHigh": 4.9247,
+  "count": 48898
  },
  {
   "bookNumber": 69,
-  "avgRating": 3.9809,
-  "stdLow": 2.9925,
-  "stdHigh": 4.9693,
-  "count": 359283
+  "avgRating": 3.8833,
+  "stdLow": 2.8429,
+  "stdHigh": 4.9237,
+  "count": 48248
  },
  {
   "bookNumber": 70,
-  "avgRating": 3.9808,
-  "stdLow": 2.9944,
-  "stdHigh": 4.9673,
-  "count": 355934
+  "avgRating": 3.8868,
+  "stdLow": 2.8449,
+  "stdHigh": 4.9287,
+  "count": 47638
  },
  {
   "bookNumber": 71,
-  "avgRating": 3.9786,
-  "stdLow": 2.9933,
-  "stdHigh": 4.9638,
-  "count": 352545
+  "avgRating": 3.88,
+  "stdLow": 2.8354,
+  "stdHigh": 4.9246,
+  "count": 47040
  },
  {
   "bookNumber": 72,
-  "avgRating": 3.9759,
-  "stdLow": 2.99,
-  "stdHigh": 4.9618,
-  "count": 349274
+  "avgRating": 3.8908,
+  "stdLow": 2.8544,
+  "stdHigh": 4.9271,
+  "count": 46419
  },
  {
   "bookNumber": 73,
-  "avgRating": 3.9752,
-  "stdLow": 2.9898,
-  "stdHigh": 4.9607,
-  "count": 346117
+  "avgRating": 3.8786,
+  "stdLow": 2.8348,
+  "stdHigh": 4.9223,
+  "count": 45865
  },
  {
   "bookNumber": 74,
-  "avgRating": 3.9738,
-  "stdLow": 2.9871,
-  "stdHigh": 4.9605,
-  "count": 342907
+  "avgRating": 3.8804,
+  "stdLow": 2.8377,
+  "stdHigh": 4.9231,
+  "count": 45288
  },
  {
   "bookNumber": 75,
-  "avgRating": 3.9727,
-  "stdLow": 2.9847,
-  "stdHigh": 4.9607,
-  "count": 339943
+  "avgRating": 3.8834,
+  "stdLow": 2.8422,
+  "stdHigh": 4.9247,
+  "count": 44723
  },
  {
   "bookNumber": 76,
-  "avgRating": 3.9721,
-  "stdLow": 2.9871,
-  "stdHigh": 4.9571,
-  "count": 337013
+  "avgRating": 3.8755,
+  "stdLow": 2.8316,
+  "stdHigh": 4.9193,
+  "count": 44203
  },
  {
   "bookNumber": 77,
-  "avgRating": 3.9702,
-  "stdLow": 2.9826,
-  "stdHigh": 4.9579,
-  "count": 333998
+  "avgRating": 3.8821,
+  "stdLow": 2.8349,
+  "stdHigh": 4.9294,
+  "count": 43749
  },
  {
   "bookNumber": 78,
-  "avgRating": 3.9709,
-  "stdLow": 2.9849,
-  "stdHigh": 4.9568,
-  "count": 331116
+  "avgRating": 3.8752,
+  "stdLow": 2.8363,
+  "stdHigh": 4.914,
+  "count": 43231
  },
  {
   "bookNumber": 79,
-  "avgRating": 3.9676,
-  "stdLow": 2.981,
-  "stdHigh": 4.9541,
-  "count": 328339
+  "avgRating": 3.8844,
+  "stdLow": 2.8443,
+  "stdHigh": 4.9245,
+  "count": 42712
  },
  {
   "bookNumber": 80,
-  "avgRating": 3.9634,
-  "stdLow": 2.974,
-  "stdHigh": 4.9529,
-  "count": 325453
+  "avgRating": 3.8774,
+  "stdLow": 2.8374,
+  "stdHigh": 4.9175,
+  "count": 42175
  },
  {
   "bookNumber": 81,
-  "avgRating": 3.9646,
-  "stdLow": 2.9778,
-  "stdHigh": 4.9513,
-  "count": 322657
+  "avgRating": 3.8742,
+  "stdLow": 2.835,
+  "stdHigh": 4.9134,
+  "count": 41690
  },
  {
   "bookNumber": 82,
-  "avgRating": 3.9654,
-  "stdLow": 2.9799,
-  "stdHigh": 4.9508,
-  "count": 319794
+  "avgRating": 3.8805,
+  "stdLow": 2.8443,
+  "stdHigh": 4.9167,
+  "count": 41265
  },
  {
   "bookNumber": 83,
-  "avgRating": 3.9621,
-  "stdLow": 2.975,
-  "stdHigh": 4.9493,
-  "count": 317069
+  "avgRating": 3.8772,
+  "stdLow": 2.84,
+  "stdHigh": 4.9144,
+  "count": 40791
  },
  {
   "bookNumber": 84,
-  "avgRating": 3.9636,
-  "stdLow": 2.9786,
-  "stdHigh": 4.9486,
-  "count": 314301
+  "avgRating": 3.8807,
+  "stdLow": 2.8464,
+  "stdHigh": 4.9151,
+  "count": 40375
  },
  {
   "bookNumber": 85,
-  "avgRating": 3.9643,
-  "stdLow": 2.9792,
-  "stdHigh": 4.9494,
-  "count": 311681
+  "avgRating": 3.8761,
+  "stdLow": 2.8411,
+  "stdHigh": 4.9111,
+  "count": 39920
  },
  {
   "bookNumber": 86,
-  "avgRating": 3.9638,
-  "stdLow": 2.9807,
-  "stdHigh": 4.9469,
-  "count": 308989
+  "avgRating": 3.8728,
+  "stdLow": 2.8341,
+  "stdHigh": 4.9115,
+  "count": 39499
  },
  {
   "bookNumber": 87,
-  "avgRating": 3.9634,
-  "stdLow": 2.9795,
-  "stdHigh": 4.9472,
-  "count": 306445
+  "avgRating": 3.8841,
+  "stdLow": 2.8522,
+  "stdHigh": 4.9159,
+  "count": 39055
  },
  {
   "bookNumber": 88,
-  "avgRating": 3.958,
-  "stdLow": 2.9726,
-  "stdHigh": 4.9434,
-  "count": 303935
+  "avgRating": 3.8833,
+  "stdLow": 2.8489,
+  "stdHigh": 4.9176,
+  "count": 38601
  },
  {
   "bookNumber": 89,
-  "avgRating": 3.9571,
-  "stdLow": 2.9699,
-  "stdHigh": 4.9443,
-  "count": 301385
+  "avgRating": 3.8731,
+  "stdLow": 2.831,
+  "stdHigh": 4.9152,
+  "count": 38216
  },
  {
   "bookNumber": 90,
-  "avgRating": 3.9566,
-  "stdLow": 2.9721,
-  "stdHigh": 4.941,
-  "count": 298882
+  "avgRating": 3.8687,
+  "stdLow": 2.8297,
+  "stdHigh": 4.9078,
+  "count": 37820
  },
  {
   "bookNumber": 91,
-  "avgRating": 3.956,
-  "stdLow": 2.9714,
-  "stdHigh": 4.9407,
-  "count": 296452
+  "avgRating": 3.8775,
+  "stdLow": 2.8405,
+  "stdHigh": 4.9146,
+  "count": 37402
  },
  {
   "bookNumber": 92,
-  "avgRating": 3.9518,
-  "stdLow": 2.9659,
-  "stdHigh": 4.9376,
-  "count": 294065
+  "avgRating": 3.8739,
+  "stdLow": 2.8432,
+  "stdHigh": 4.9047,
+  "count": 37010
  },
  {
   "bookNumber": 93,
-  "avgRating": 3.9529,
-  "stdLow": 2.9682,
-  "stdHigh": 4.9376,
-  "count": 291723
+  "avgRating": 3.8702,
+  "stdLow": 2.8296,
+  "stdHigh": 4.9109,
+  "count": 36631
  },
  {
   "bookNumber": 94,
-  "avgRating": 3.9537,
-  "stdLow": 2.9707,
-  "stdHigh": 4.9367,
-  "count": 289349
+  "avgRating": 3.8774,
+  "stdLow": 2.8458,
+  "stdHigh": 4.9089,
+  "count": 36257
  },
  {
   "bookNumber": 95,
-  "avgRating": 3.9541,
-  "stdLow": 2.9699,
-  "stdHigh": 4.9383,
-  "count": 286926
+  "avgRating": 3.8752,
+  "stdLow": 2.8419,
+  "stdHigh": 4.9085,
+  "count": 35893
  },
  {
   "bookNumber": 96,
-  "avgRating": 3.9509,
-  "stdLow": 2.9665,
-  "stdHigh": 4.9353,
-  "count": 284556
+  "avgRating": 3.8728,
+  "stdLow": 2.8373,
+  "stdHigh": 4.9084,
+  "count": 35554
  },
  {
   "bookNumber": 97,
-  "avgRating": 3.9503,
-  "stdLow": 2.9655,
-  "stdHigh": 4.9351,
-  "count": 282298
+  "avgRating": 3.8684,
+  "stdLow": 2.8336,
+  "stdHigh": 4.9032,
+  "count": 35170
  },
  {
   "bookNumber": 98,
-  "avgRating": 3.9484,
-  "stdLow": 2.9641,
-  "stdHigh": 4.9328,
-  "count": 279995
+  "avgRating": 3.8725,
+  "stdLow": 2.8334,
+  "stdHigh": 4.9117,
+  "count": 34841
  },
  {
   "bookNumber": 99,
-  "avgRating": 3.9484,
-  "stdLow": 2.9651,
-  "stdHigh": 4.9317,
-  "count": 277761
+  "avgRating": 3.8775,
+  "stdLow": 2.841,
+  "stdHigh": 4.9141,
+  "count": 34491
  },
  {
   "bookNumber": 100,
-  "avgRating": 3.9432,
-  "stdLow": 2.9595,
-  "stdHigh": 4.9268,
-  "count": 275502
+  "avgRating": 3.8803,
+  "stdLow": 2.8449,
+  "stdHigh": 4.9158,
+  "count": 34124
  },
  {
   "bookNumber": 101,
-  "avgRating": 3.9444,
-  "stdLow": 2.9608,
-  "stdHigh": 4.9279,
-  "count": 273364
+  "avgRating": 3.8767,
+  "stdLow": 2.8482,
+  "stdHigh": 4.9051,
+  "count": 33776
  },
  {
   "bookNumber": 102,
-  "avgRating": 3.944,
-  "stdLow": 2.9596,
-  "stdHigh": 4.9284,
-  "count": 271248
+  "avgRating": 3.8696,
+  "stdLow": 2.8383,
+  "stdHigh": 4.901,
+  "count": 33444
  },
  {
   "bookNumber": 103,
-  "avgRating": 3.9444,
-  "stdLow": 2.9595,
-  "stdHigh": 4.9292,
-  "count": 269161
+  "avgRating": 3.8659,
+  "stdLow": 2.8328,
+  "stdHigh": 4.899,
+  "count": 33109
  },
  {
   "bookNumber": 104,
-  "avgRating": 3.9454,
-  "stdLow": 2.9642,
-  "stdHigh": 4.9266,
-  "count": 267094
+  "avgRating": 3.8759,
+  "stdLow": 2.8439,
+  "stdHigh": 4.9079,
+  "count": 32779
  },
  {
   "bookNumber": 105,
-  "avgRating": 3.945,
-  "stdLow": 2.9619,
-  "stdHigh": 4.9281,
-  "count": 265009
+  "avgRating": 3.8748,
+  "stdLow": 2.8477,
+  "stdHigh": 4.902,
+  "count": 32464
  },
  {
   "bookNumber": 106,
-  "avgRating": 3.9376,
-  "stdLow": 2.9532,
-  "stdHigh": 4.922,
-  "count": 262910
+  "avgRating": 3.8734,
+  "stdLow": 2.8512,
+  "stdHigh": 4.8956,
+  "count": 32157
  },
  {
   "bookNumber": 107,
-  "avgRating": 3.9391,
-  "stdLow": 2.9539,
-  "stdHigh": 4.9243,
-  "count": 260848
+  "avgRating": 3.86,
+  "stdLow": 2.8296,
+  "stdHigh": 4.8905,
+  "count": 31824
  },
  {
   "bookNumber": 108,
-  "avgRating": 3.9389,
-  "stdLow": 2.9572,
-  "stdHigh": 4.9206,
-  "count": 258786
+  "avgRating": 3.881,
+  "stdLow": 2.8561,
+  "stdHigh": 4.906,
+  "count": 31527
  },
  {
   "bookNumber": 109,
-  "avgRating": 3.9368,
-  "stdLow": 2.9539,
-  "stdHigh": 4.9198,
-  "count": 256829
+  "avgRating": 3.8803,
+  "stdLow": 2.8536,
+  "stdHigh": 4.907,
+  "count": 31241
  },
  {
   "bookNumber": 110,
-  "avgRating": 3.9379,
-  "stdLow": 2.9556,
-  "stdHigh": 4.9202,
-  "count": 254955
+  "avgRating": 3.8688,
+  "stdLow": 2.8379,
+  "stdHigh": 4.8996,
+  "count": 30949
  },
  {
   "bookNumber": 111,
-  "avgRating": 3.9386,
-  "stdLow": 2.9543,
-  "stdHigh": 4.9229,
-  "count": 253019
+  "avgRating": 3.8647,
+  "stdLow": 2.8337,
+  "stdHigh": 4.8956,
+  "count": 30662
  },
  {
   "bookNumber": 112,
-  "avgRating": 3.9371,
-  "stdLow": 2.9551,
-  "stdHigh": 4.9191,
-  "count": 251220
+  "avgRating": 3.8658,
+  "stdLow": 2.8321,
+  "stdHigh": 4.8996,
+  "count": 30379
  },
  {
   "bookNumber": 113,
-  "avgRating": 3.934,
-  "stdLow": 2.9497,
-  "stdHigh": 4.9183,
-  "count": 249417
+  "avgRating": 3.8615,
+  "stdLow": 2.8301,
+  "stdHigh": 4.8929,
+  "count": 30116
  },
  {
   "bookNumber": 114,
-  "avgRating": 3.9339,
-  "stdLow": 2.9518,
-  "stdHigh": 4.9161,
-  "count": 247559
+  "avgRating": 3.8739,
+  "stdLow": 2.8495,
+  "stdHigh": 4.8983,
+  "count": 29840
  },
  {
   "bookNumber": 115,
-  "avgRating": 3.9326,
-  "stdLow": 2.9496,
-  "stdHigh": 4.9157,
-  "count": 245669
+  "avgRating": 3.8644,
+  "stdLow": 2.8346,
+  "stdHigh": 4.8941,
+  "count": 29555
  },
  {
   "bookNumber": 116,
-  "avgRating": 3.9323,
-  "stdLow": 2.9475,
-  "stdHigh": 4.9171,
-  "count": 243853
+  "avgRating": 3.8682,
+  "stdLow": 2.841,
+  "stdHigh": 4.8954,
+  "count": 29293
  },
  {
   "bookNumber": 117,
-  "avgRating": 3.932,
-  "stdLow": 2.9488,
-  "stdHigh": 4.9151,
-  "count": 242090
+  "avgRating": 3.8662,
+  "stdLow": 2.8404,
+  "stdHigh": 4.8919,
+  "count": 29033
  },
  {
   "bookNumber": 118,
-  "avgRating": 3.928,
-  "stdLow": 2.9444,
-  "stdHigh": 4.9116,
-  "count": 240297
+  "avgRating": 3.8754,
+  "stdLow": 2.8499,
+  "stdHigh": 4.9009,
+  "count": 28794
  },
  {
   "bookNumber": 119,
-  "avgRating": 3.9288,
-  "stdLow": 2.9471,
-  "stdHigh": 4.9105,
-  "count": 238523
+  "avgRating": 3.8642,
+  "stdLow": 2.8276,
+  "stdHigh": 4.9008,
+  "count": 28535
  },
  {
   "bookNumber": 120,
-  "avgRating": 3.9273,
-  "stdLow": 2.946,
-  "stdHigh": 4.9087,
-  "count": 236810
+  "avgRating": 3.8645,
+  "stdLow": 2.8336,
+  "stdHigh": 4.8955,
+  "count": 28272
  },
  {
   "bookNumber": 121,
-  "avgRating": 3.9252,
-  "stdLow": 2.9409,
-  "stdHigh": 4.9095,
-  "count": 235085
+  "avgRating": 3.8621,
+  "stdLow": 2.8339,
+  "stdHigh": 4.8903,
+  "count": 28011
  },
  {
   "bookNumber": 122,
-  "avgRating": 3.9265,
-  "stdLow": 2.9442,
-  "stdHigh": 4.9088,
-  "count": 233335
+  "avgRating": 3.8627,
+  "stdLow": 2.8301,
+  "stdHigh": 4.8954,
+  "count": 27779
  },
  {
   "bookNumber": 123,
-  "avgRating": 3.9274,
-  "stdLow": 2.9442,
-  "stdHigh": 4.9106,
-  "count": 231677
+  "avgRating": 3.861,
+  "stdLow": 2.8309,
+  "stdHigh": 4.8911,
+  "count": 27514
  },
  {
   "bookNumber": 124,
-  "avgRating": 3.9257,
-  "stdLow": 2.9429,
-  "stdHigh": 4.9084,
-  "count": 230013
+  "avgRating": 3.8718,
+  "stdLow": 2.8382,
+  "stdHigh": 4.9054,
+  "count": 27263
  },
  {
   "bookNumber": 125,
-  "avgRating": 3.9258,
-  "stdLow": 2.9422,
-  "stdHigh": 4.9094,
-  "count": 228408
+  "avgRating": 3.8734,
+  "stdLow": 2.8505,
+  "stdHigh": 4.8963,
+  "count": 27031
  },
  {
   "bookNumber": 126,
-  "avgRating": 3.9209,
-  "stdLow": 2.9366,
-  "stdHigh": 4.9053,
-  "count": 226763
+  "avgRating": 3.8622,
+  "stdLow": 2.8332,
+  "stdHigh": 4.8912,
+  "count": 26788
  },
  {
   "bookNumber": 127,
-  "avgRating": 3.9258,
-  "stdLow": 2.9453,
-  "stdHigh": 4.9063,
-  "count": 225151
+  "avgRating": 3.8616,
+  "stdLow": 2.8375,
+  "stdHigh": 4.8856,
+  "count": 26564
  },
  {
   "bookNumber": 128,
-  "avgRating": 3.9215,
-  "stdLow": 2.9394,
-  "stdHigh": 4.9035,
-  "count": 223542
+  "avgRating": 3.8574,
+  "stdLow": 2.8293,
+  "stdHigh": 4.8855,
+  "count": 26334
  },
  {
   "bookNumber": 129,
-  "avgRating": 3.9221,
-  "stdLow": 2.9398,
-  "stdHigh": 4.9044,
-  "count": 221971
+  "avgRating": 3.8626,
+  "stdLow": 2.8364,
+  "stdHigh": 4.8888,
+  "count": 26143
  },
  {
   "bookNumber": 130,
-  "avgRating": 3.9232,
-  "stdLow": 2.9417,
-  "stdHigh": 4.9048,
-  "count": 220389
+  "avgRating": 3.8651,
+  "stdLow": 2.8387,
+  "stdHigh": 4.8915,
+  "count": 25917
  },
  {
   "bookNumber": 131,
-  "avgRating": 3.9181,
-  "stdLow": 2.9363,
-  "stdHigh": 4.9,
-  "count": 218853
+  "avgRating": 3.8604,
+  "stdLow": 2.8349,
+  "stdHigh": 4.8859,
+  "count": 25715
  },
  {
   "bookNumber": 132,
-  "avgRating": 3.9203,
-  "stdLow": 2.9385,
-  "stdHigh": 4.9022,
-  "count": 217268
+  "avgRating": 3.859,
+  "stdLow": 2.8331,
+  "stdHigh": 4.8849,
+  "count": 25478
  },
  {
   "bookNumber": 133,
-  "avgRating": 3.9154,
-  "stdLow": 2.9339,
-  "stdHigh": 4.8969,
-  "count": 215753
+  "avgRating": 3.8586,
+  "stdLow": 2.8289,
+  "stdHigh": 4.8884,
+  "count": 25257
  },
  {
   "bookNumber": 134,
-  "avgRating": 3.9176,
-  "stdLow": 2.9339,
-  "stdHigh": 4.9013,
-  "count": 214223
+  "avgRating": 3.8566,
+  "stdLow": 2.8274,
+  "stdHigh": 4.8858,
+  "count": 25024
  },
  {
   "bookNumber": 135,
-  "avgRating": 3.9186,
-  "stdLow": 2.9382,
-  "stdHigh": 4.899,
-  "count": 212731
+  "avgRating": 3.8574,
+  "stdLow": 2.8317,
+  "stdHigh": 4.8832,
+  "count": 24794
  },
  {
   "bookNumber": 136,
-  "avgRating": 3.9133,
-  "stdLow": 2.9278,
-  "stdHigh": 4.8989,
-  "count": 211252
+  "avgRating": 3.8656,
+  "stdLow": 2.8455,
+  "stdHigh": 4.8858,
+  "count": 24587
  },
  {
   "bookNumber": 137,
-  "avgRating": 3.9152,
-  "stdLow": 2.933,
-  "stdHigh": 4.8973,
-  "count": 209754
+  "avgRating": 3.8512,
+  "stdLow": 2.8234,
+  "stdHigh": 4.879,
+  "count": 24401
  },
  {
   "bookNumber": 138,
-  "avgRating": 3.914,
-  "stdLow": 2.933,
-  "stdHigh": 4.895,
-  "count": 208316
+  "avgRating": 3.8655,
+  "stdLow": 2.8429,
+  "stdHigh": 4.8881,
+  "count": 24198
  },
  {
   "bookNumber": 139,
-  "avgRating": 3.9137,
-  "stdLow": 2.9305,
-  "stdHigh": 4.897,
-  "count": 206880
+  "avgRating": 3.8585,
+  "stdLow": 2.8343,
+  "stdHigh": 4.8827,
+  "count": 24000
  },
  {
   "bookNumber": 140,
-  "avgRating": 3.916,
-  "stdLow": 2.9368,
-  "stdHigh": 4.8951,
-  "count": 205468
+  "avgRating": 3.8503,
+  "stdLow": 2.8203,
+  "stdHigh": 4.8804,
+  "count": 23813
  },
  {
   "bookNumber": 141,
-  "avgRating": 3.9112,
-  "stdLow": 2.9305,
-  "stdHigh": 4.892,
-  "count": 204104
+  "avgRating": 3.8614,
+  "stdLow": 2.8426,
+  "stdHigh": 4.8802,
+  "count": 23618
  },
  {
   "bookNumber": 142,
-  "avgRating": 3.9103,
-  "stdLow": 2.9268,
-  "stdHigh": 4.8938,
-  "count": 202669
+  "avgRating": 3.8612,
+  "stdLow": 2.8441,
+  "stdHigh": 4.8784,
+  "count": 23445
  },
  {
   "bookNumber": 143,
-  "avgRating": 3.9126,
-  "stdLow": 2.9326,
-  "stdHigh": 4.8926,
-  "count": 201288
+  "avgRating": 3.8544,
+  "stdLow": 2.8284,
+  "stdHigh": 4.8804,
+  "count": 23238
  },
  {
   "bookNumber": 144,
-  "avgRating": 3.912,
-  "stdLow": 2.9292,
-  "stdHigh": 4.8947,
-  "count": 199991
+  "avgRating": 3.864,
+  "stdLow": 2.8404,
+  "stdHigh": 4.8876,
+  "count": 23058
  },
  {
   "bookNumber": 145,
-  "avgRating": 3.9135,
-  "stdLow": 2.9335,
-  "stdHigh": 4.8935,
-  "count": 198661
+  "avgRating": 3.8618,
+  "stdLow": 2.8395,
+  "stdHigh": 4.8841,
+  "count": 22867
  },
  {
   "bookNumber": 146,
-  "avgRating": 3.9134,
-  "stdLow": 2.9311,
-  "stdHigh": 4.8957,
-  "count": 197409
+  "avgRating": 3.8524,
+  "stdLow": 2.8289,
+  "stdHigh": 4.8759,
+  "count": 22686
  },
  {
   "bookNumber": 147,
-  "avgRating": 3.9124,
-  "stdLow": 2.9308,
-  "stdHigh": 4.8941,
-  "count": 196062
+  "avgRating": 3.8593,
+  "stdLow": 2.8341,
+  "stdHigh": 4.8844,
+  "count": 22508
  },
  {
   "bookNumber": 148,
-  "avgRating": 3.9116,
-  "stdLow": 2.9291,
-  "stdHigh": 4.894,
-  "count": 194802
+  "avgRating": 3.8594,
+  "stdLow": 2.839,
+  "stdHigh": 4.8798,
+  "count": 22332
  },
  {
   "bookNumber": 149,
-  "avgRating": 3.9075,
-  "stdLow": 2.9263,
-  "stdHigh": 4.8887,
-  "count": 193534
+  "avgRating": 3.854,
+  "stdLow": 2.8252,
+  "stdHigh": 4.8828,
+  "count": 22158
  },
  {
   "bookNumber": 150,
-  "avgRating": 3.9082,
-  "stdLow": 2.928,
-  "stdHigh": 4.8884,
-  "count": 192307
+  "avgRating": 3.853,
+  "stdLow": 2.8202,
+  "stdHigh": 4.8857,
+  "count": 21979
  },
  {
   "bookNumber": 151,
-  "avgRating": 3.9077,
-  "stdLow": 2.9265,
-  "stdHigh": 4.889,
-  "count": 191092
+  "avgRating": 3.863,
+  "stdLow": 2.8425,
+  "stdHigh": 4.8836,
+  "count": 21807
  },
  {
   "bookNumber": 152,
-  "avgRating": 3.9075,
-  "stdLow": 2.9254,
-  "stdHigh": 4.8897,
-  "count": 189831
+  "avgRating": 3.8609,
+  "stdLow": 2.8387,
+  "stdHigh": 4.8832,
+  "count": 21646
  },
  {
   "bookNumber": 153,
-  "avgRating": 3.9095,
-  "stdLow": 2.9287,
-  "stdHigh": 4.8903,
-  "count": 188610
+  "avgRating": 3.8539,
+  "stdLow": 2.8263,
+  "stdHigh": 4.8814,
+  "count": 21478
  },
  {
   "bookNumber": 154,
-  "avgRating": 3.9071,
-  "stdLow": 2.9264,
-  "stdHigh": 4.8877,
-  "count": 187387
+  "avgRating": 3.8548,
+  "stdLow": 2.8252,
+  "stdHigh": 4.8844,
+  "count": 21325
  },
  {
   "bookNumber": 155,
-  "avgRating": 3.9082,
-  "stdLow": 2.9284,
-  "stdHigh": 4.888,
-  "count": 186142
+  "avgRating": 3.8704,
+  "stdLow": 2.8531,
+  "stdHigh": 4.8877,
+  "count": 21162
  },
  {
   "bookNumber": 156,
-  "avgRating": 3.9053,
-  "stdLow": 2.9233,
-  "stdHigh": 4.8874,
-  "count": 184948
+  "avgRating": 3.8704,
+  "stdLow": 2.8513,
+  "stdHigh": 4.8895,
+  "count": 20998
  },
  {
   "bookNumber": 157,
-  "avgRating": 3.904,
-  "stdLow": 2.9238,
-  "stdHigh": 4.8841,
-  "count": 183773
+  "avgRating": 3.8534,
+  "stdLow": 2.832,
+  "stdHigh": 4.8749,
+  "count": 20816
  },
  {
   "bookNumber": 158,
-  "avgRating": 3.9074,
-  "stdLow": 2.9288,
-  "stdHigh": 4.886,
-  "count": 182620
+  "avgRating": 3.8526,
+  "stdLow": 2.8227,
+  "stdHigh": 4.8826,
+  "count": 20665
  },
  {
   "bookNumber": 159,
-  "avgRating": 3.9036,
-  "stdLow": 2.9223,
-  "stdHigh": 4.8849,
-  "count": 181486
+  "avgRating": 3.8614,
+  "stdLow": 2.8432,
+  "stdHigh": 4.8796,
+  "count": 20515
  },
  {
   "bookNumber": 160,
-  "avgRating": 3.9029,
-  "stdLow": 2.9198,
-  "stdHigh": 4.8859,
-  "count": 180331
+  "avgRating": 3.8386,
+  "stdLow": 2.8045,
+  "stdHigh": 4.8727,
+  "count": 20363
  },
  {
   "bookNumber": 161,
-  "avgRating": 3.9031,
-  "stdLow": 2.9224,
-  "stdHigh": 4.8839,
-  "count": 179144
+  "avgRating": 3.8417,
+  "stdLow": 2.8049,
+  "stdHigh": 4.8786,
+  "count": 20219
  },
  {
   "bookNumber": 162,
-  "avgRating": 3.8994,
-  "stdLow": 2.9179,
-  "stdHigh": 4.881,
-  "count": 177991
+  "avgRating": 3.8516,
+  "stdLow": 2.8189,
+  "stdHigh": 4.8843,
+  "count": 20070
  },
  {
   "bookNumber": 163,
-  "avgRating": 3.9017,
-  "stdLow": 2.9217,
-  "stdHigh": 4.8817,
-  "count": 176876
+  "avgRating": 3.8603,
+  "stdLow": 2.8385,
+  "stdHigh": 4.8822,
+  "count": 19906
  },
  {
   "bookNumber": 164,
-  "avgRating": 3.9001,
-  "stdLow": 2.9184,
-  "stdHigh": 4.8818,
-  "count": 175720
+  "avgRating": 3.8589,
+  "stdLow": 2.8383,
+  "stdHigh": 4.8795,
+  "count": 19755
  },
  {
   "bookNumber": 165,
-  "avgRating": 3.8989,
-  "stdLow": 2.9189,
-  "stdHigh": 4.8789,
-  "count": 174616
+  "avgRating": 3.8544,
+  "stdLow": 2.8311,
+  "stdHigh": 4.8777,
+  "count": 19616
  },
  {
   "bookNumber": 166,
-  "avgRating": 3.9012,
-  "stdLow": 2.9215,
-  "stdHigh": 4.8808,
-  "count": 173536
+  "avgRating": 3.8398,
+  "stdLow": 2.8089,
+  "stdHigh": 4.8707,
+  "count": 19483
  },
  {
   "bookNumber": 167,
-  "avgRating": 3.899,
-  "stdLow": 2.9175,
-  "stdHigh": 4.8805,
-  "count": 172405
+  "avgRating": 3.8688,
+  "stdLow": 2.8447,
+  "stdHigh": 4.8928,
+  "count": 19342
  },
  {
   "bookNumber": 168,
-  "avgRating": 3.8958,
-  "stdLow": 2.9131,
-  "stdHigh": 4.8785,
-  "count": 171357
+  "avgRating": 3.858,
+  "stdLow": 2.8379,
+  "stdHigh": 4.8782,
+  "count": 19221
  },
  {
   "bookNumber": 169,
-  "avgRating": 3.9021,
-  "stdLow": 2.9207,
-  "stdHigh": 4.8834,
-  "count": 170271
+  "avgRating": 3.8602,
+  "stdLow": 2.8411,
+  "stdHigh": 4.8793,
+  "count": 19069
  },
  {
   "bookNumber": 170,
-  "avgRating": 3.895,
-  "stdLow": 2.9119,
-  "stdHigh": 4.8781,
-  "count": 169193
+  "avgRating": 3.8611,
+  "stdLow": 2.8388,
+  "stdHigh": 4.8834,
+  "count": 18923
  },
  {
   "bookNumber": 171,
-  "avgRating": 3.8956,
-  "stdLow": 2.9146,
-  "stdHigh": 4.8766,
-  "count": 168166
+  "avgRating": 3.8558,
+  "stdLow": 2.8288,
+  "stdHigh": 4.8829,
+  "count": 18784
  },
  {
   "bookNumber": 172,
-  "avgRating": 3.8964,
-  "stdLow": 2.9173,
-  "stdHigh": 4.8754,
-  "count": 167093
+  "avgRating": 3.8543,
+  "stdLow": 2.8403,
+  "stdHigh": 4.8683,
+  "count": 18628
  },
  {
   "bookNumber": 173,
-  "avgRating": 3.8947,
-  "stdLow": 2.9135,
-  "stdHigh": 4.8759,
-  "count": 166055
+  "avgRating": 3.8504,
+  "stdLow": 2.8258,
+  "stdHigh": 4.8751,
+  "count": 18520
  },
  {
   "bookNumber": 174,
-  "avgRating": 3.8978,
-  "stdLow": 2.9175,
-  "stdHigh": 4.878,
-  "count": 164997
+  "avgRating": 3.8507,
+  "stdLow": 2.8288,
+  "stdHigh": 4.8726,
+  "count": 18398
  },
  {
   "bookNumber": 175,
-  "avgRating": 3.8936,
-  "stdLow": 2.9146,
-  "stdHigh": 4.8725,
-  "count": 164011
+  "avgRating": 3.8569,
+  "stdLow": 2.8373,
+  "stdHigh": 4.8764,
+  "count": 18268
  },
  {
   "bookNumber": 176,
-  "avgRating": 3.8903,
-  "stdLow": 2.9088,
-  "stdHigh": 4.8718,
-  "count": 163018
+  "avgRating": 3.8612,
+  "stdLow": 2.8419,
+  "stdHigh": 4.8806,
+  "count": 18168
  },
  {
   "bookNumber": 177,
-  "avgRating": 3.8915,
-  "stdLow": 2.909,
-  "stdHigh": 4.8739,
-  "count": 162067
+  "avgRating": 3.866,
+  "stdLow": 2.8462,
+  "stdHigh": 4.8858,
+  "count": 18035
  },
  {
   "bookNumber": 178,
-  "avgRating": 3.8899,
-  "stdLow": 2.9091,
-  "stdHigh": 4.8707,
-  "count": 161126
+  "avgRating": 3.8479,
+  "stdLow": 2.8296,
+  "stdHigh": 4.8663,
+  "count": 17917
  },
  {
   "bookNumber": 179,
-  "avgRating": 3.8929,
-  "stdLow": 2.9141,
-  "stdHigh": 4.8717,
-  "count": 160182
+  "avgRating": 3.85,
+  "stdLow": 2.8215,
+  "stdHigh": 4.8785,
+  "count": 17803
  },
  {
   "bookNumber": 180,
-  "avgRating": 3.8913,
-  "stdLow": 2.912,
-  "stdHigh": 4.8705,
-  "count": 159216
+  "avgRating": 3.8645,
+  "stdLow": 2.8493,
+  "stdHigh": 4.8798,
+  "count": 17696
  },
  {
   "bookNumber": 181,
-  "avgRating": 3.8909,
-  "stdLow": 2.9113,
-  "stdHigh": 4.8704,
-  "count": 158204
+  "avgRating": 3.8608,
+  "stdLow": 2.85,
+  "stdHigh": 4.8715,
+  "count": 17574
  },
  {
   "bookNumber": 182,
-  "avgRating": 3.8878,
-  "stdLow": 2.9069,
-  "stdHigh": 4.8687,
-  "count": 157269
+  "avgRating": 3.8515,
+  "stdLow": 2.8338,
+  "stdHigh": 4.8693,
+  "count": 17472
  },
  {
   "bookNumber": 183,
-  "avgRating": 3.8905,
-  "stdLow": 2.9084,
-  "stdHigh": 4.8726,
-  "count": 156308
+  "avgRating": 3.852,
+  "stdLow": 2.8358,
+  "stdHigh": 4.8682,
+  "count": 17355
  },
  {
   "bookNumber": 184,
-  "avgRating": 3.8855,
-  "stdLow": 2.9048,
-  "stdHigh": 4.8661,
-  "count": 155395
+  "avgRating": 3.8553,
+  "stdLow": 2.8363,
+  "stdHigh": 4.8742,
+  "count": 17238
  },
  {
   "bookNumber": 185,
-  "avgRating": 3.8907,
-  "stdLow": 2.9123,
-  "stdHigh": 4.8692,
-  "count": 154481
+  "avgRating": 3.8456,
+  "stdLow": 2.8289,
+  "stdHigh": 4.8624,
+  "count": 17109
  },
  {
   "bookNumber": 186,
-  "avgRating": 3.8895,
-  "stdLow": 2.9101,
-  "stdHigh": 4.869,
-  "count": 153586
+  "avgRating": 3.8583,
+  "stdLow": 2.8383,
+  "stdHigh": 4.8782,
+  "count": 16983
  },
  {
   "bookNumber": 187,
-  "avgRating": 3.8902,
-  "stdLow": 2.9122,
-  "stdHigh": 4.8682,
-  "count": 152706
+  "avgRating": 3.8477,
+  "stdLow": 2.8289,
+  "stdHigh": 4.8666,
+  "count": 16878
  },
  {
   "bookNumber": 188,
-  "avgRating": 3.8913,
-  "stdLow": 2.9141,
+  "avgRating": 3.8502,
+  "stdLow": 2.8319,
   "stdHigh": 4.8686,
-  "count": 151876
+  "count": 16773
  },
  {
   "bookNumber": 189,
-  "avgRating": 3.8879,
-  "stdLow": 2.9088,
-  "stdHigh": 4.867,
-  "count": 150934
+  "avgRating": 3.8492,
+  "stdLow": 2.8362,
+  "stdHigh": 4.8622,
+  "count": 16664
  },
  {
   "bookNumber": 190,
-  "avgRating": 3.889,
-  "stdLow": 2.912,
-  "stdHigh": 4.866,
-  "count": 150089
+  "avgRating": 3.8422,
+  "stdLow": 2.8326,
+  "stdHigh": 4.8519,
+  "count": 16563
  },
  {
   "bookNumber": 191,
-  "avgRating": 3.8848,
-  "stdLow": 2.9044,
-  "stdHigh": 4.8652,
-  "count": 149266
+  "avgRating": 3.845,
+  "stdLow": 2.8243,
+  "stdHigh": 4.8657,
+  "count": 16444
  },
  {
   "bookNumber": 192,
-  "avgRating": 3.8847,
-  "stdLow": 2.9059,
-  "stdHigh": 4.8635,
-  "count": 148383
+  "avgRating": 3.8433,
+  "stdLow": 2.8245,
+  "stdHigh": 4.8621,
+  "count": 16339
  },
  {
   "bookNumber": 193,
-  "avgRating": 3.8812,
-  "stdLow": 2.9013,
-  "stdHigh": 4.8611,
-  "count": 147530
+  "avgRating": 3.8535,
+  "stdLow": 2.8352,
+  "stdHigh": 4.8718,
+  "count": 16243
  },
  {
   "bookNumber": 194,
-  "avgRating": 3.8837,
-  "stdLow": 2.9032,
-  "stdHigh": 4.8643,
-  "count": 146696
+  "avgRating": 3.8479,
+  "stdLow": 2.8231,
+  "stdHigh": 4.8727,
+  "count": 16135
  },
  {
   "bookNumber": 195,
-  "avgRating": 3.8829,
-  "stdLow": 2.9028,
-  "stdHigh": 4.863,
-  "count": 145901
+  "avgRating": 3.8513,
+  "stdLow": 2.8325,
+  "stdHigh": 4.8702,
+  "count": 16036
  },
  {
   "bookNumber": 196,
-  "avgRating": 3.8819,
-  "stdLow": 2.9019,
-  "stdHigh": 4.8619,
-  "count": 145070
+  "avgRating": 3.847,
+  "stdLow": 2.8296,
+  "stdHigh": 4.8644,
+  "count": 15938
  },
  {
   "bookNumber": 197,
-  "avgRating": 3.8829,
-  "stdLow": 2.8998,
-  "stdHigh": 4.8661,
-  "count": 144236
+  "avgRating": 3.8486,
+  "stdLow": 2.8338,
+  "stdHigh": 4.8634,
+  "count": 15838
  },
  {
   "bookNumber": 198,
-  "avgRating": 3.8834,
-  "stdLow": 2.901,
-  "stdHigh": 4.8657,
-  "count": 143448
+  "avgRating": 3.8444,
+  "stdLow": 2.8339,
+  "stdHigh": 4.8549,
+  "count": 15762
  },
  {
   "bookNumber": 199,
-  "avgRating": 3.8815,
-  "stdLow": 2.9003,
-  "stdHigh": 4.8628,
-  "count": 142636
+  "avgRating": 3.8517,
+  "stdLow": 2.8351,
+  "stdHigh": 4.8682,
+  "count": 15657
  },
  {
   "bookNumber": 200,
-  "avgRating": 3.8785,
-  "stdLow": 2.8982,
-  "stdHigh": 4.8588,
-  "count": 141841
+  "avgRating": 3.8413,
+  "stdLow": 2.8266,
+  "stdHigh": 4.856,
+  "count": 15561
  },
  {
   "bookNumber": 201,
-  "avgRating": 3.8817,
-  "stdLow": 2.9032,
-  "stdHigh": 4.8602,
-  "count": 141065
+  "avgRating": 3.855,
+  "stdLow": 2.8331,
+  "stdHigh": 4.8769,
+  "count": 15446
  },
  {
   "bookNumber": 202,
-  "avgRating": 3.8807,
-  "stdLow": 2.901,
-  "stdHigh": 4.8604,
-  "count": 140272
+  "avgRating": 3.8578,
+  "stdLow": 2.8432,
+  "stdHigh": 4.8725,
+  "count": 15335
  },
  {
   "bookNumber": 203,
-  "avgRating": 3.8802,
-  "stdLow": 2.9009,
-  "stdHigh": 4.8595,
-  "count": 139467
+  "avgRating": 3.8473,
+  "stdLow": 2.8279,
+  "stdHigh": 4.8667,
+  "count": 15230
  },
  {
   "bookNumber": 204,
-  "avgRating": 3.8813,
-  "stdLow": 2.9019,
-  "stdHigh": 4.8606,
-  "count": 138680
+  "avgRating": 3.8496,
+  "stdLow": 2.8292,
+  "stdHigh": 4.8701,
+  "count": 15123
  },
  {
   "bookNumber": 205,
-  "avgRating": 3.8773,
-  "stdLow": 2.899,
-  "stdHigh": 4.8555,
-  "count": 137920
+  "avgRating": 3.8448,
+  "stdLow": 2.8308,
+  "stdHigh": 4.8589,
+  "count": 15016
  },
  {
   "bookNumber": 206,
-  "avgRating": 3.8747,
-  "stdLow": 2.8942,
-  "stdHigh": 4.8552,
-  "count": 137193
+  "avgRating": 3.8472,
+  "stdLow": 2.8178,
+  "stdHigh": 4.8766,
+  "count": 14923
  },
  {
   "bookNumber": 207,
-  "avgRating": 3.8796,
-  "stdLow": 2.9005,
-  "stdHigh": 4.8586,
-  "count": 136434
+  "avgRating": 3.8534,
+  "stdLow": 2.8404,
+  "stdHigh": 4.8665,
+  "count": 14833
  },
  {
   "bookNumber": 208,
-  "avgRating": 3.8812,
-  "stdLow": 2.9018,
-  "stdHigh": 4.8607,
-  "count": 135640
+  "avgRating": 3.842,
+  "stdLow": 2.8258,
+  "stdHigh": 4.8582,
+  "count": 14741
  },
  {
   "bookNumber": 209,
-  "avgRating": 3.8802,
-  "stdLow": 2.9041,
-  "stdHigh": 4.8562,
-  "count": 134903
+  "avgRating": 3.8573,
+  "stdLow": 2.8486,
+  "stdHigh": 4.866,
+  "count": 14658
  },
  {
   "bookNumber": 210,
-  "avgRating": 3.8763,
-  "stdLow": 2.8966,
-  "stdHigh": 4.8559,
-  "count": 134162
+  "avgRating": 3.851,
+  "stdLow": 2.8411,
+  "stdHigh": 4.8609,
+  "count": 14568
  },
  {
   "bookNumber": 211,
-  "avgRating": 3.8764,
-  "stdLow": 2.8978,
-  "stdHigh": 4.8549,
-  "count": 133422
+  "avgRating": 3.8565,
+  "stdLow": 2.8472,
+  "stdHigh": 4.8659,
+  "count": 14475
  },
  {
   "bookNumber": 212,
-  "avgRating": 3.8778,
-  "stdLow": 2.8981,
-  "stdHigh": 4.8575,
-  "count": 132696
+  "avgRating": 3.8503,
+  "stdLow": 2.8375,
+  "stdHigh": 4.8632,
+  "count": 14399
  },
  {
   "bookNumber": 213,
-  "avgRating": 3.8742,
-  "stdLow": 2.8968,
-  "stdHigh": 4.8517,
-  "count": 131952
+  "avgRating": 3.8511,
+  "stdLow": 2.8474,
+  "stdHigh": 4.8549,
+  "count": 14316
  },
  {
   "bookNumber": 214,
-  "avgRating": 3.871,
-  "stdLow": 2.89,
-  "stdHigh": 4.852,
-  "count": 131267
+  "avgRating": 3.8391,
+  "stdLow": 2.8292,
+  "stdHigh": 4.849,
+  "count": 14242
  },
  {
   "bookNumber": 215,
-  "avgRating": 3.8761,
-  "stdLow": 2.8955,
-  "stdHigh": 4.8568,
-  "count": 130590
+  "avgRating": 3.853,
+  "stdLow": 2.8486,
+  "stdHigh": 4.8574,
+  "count": 14157
  },
  {
   "bookNumber": 216,
-  "avgRating": 3.8733,
-  "stdLow": 2.8916,
-  "stdHigh": 4.855,
-  "count": 129897
+  "avgRating": 3.8481,
+  "stdLow": 2.8391,
+  "stdHigh": 4.857,
+  "count": 14054
  },
  {
   "bookNumber": 217,
-  "avgRating": 3.8775,
-  "stdLow": 2.9011,
-  "stdHigh": 4.8539,
-  "count": 129194
+  "avgRating": 3.8349,
+  "stdLow": 2.8265,
+  "stdHigh": 4.8434,
+  "count": 13963
  },
  {
   "bookNumber": 218,
-  "avgRating": 3.8775,
-  "stdLow": 2.9018,
-  "stdHigh": 4.8533,
-  "count": 128502
+  "avgRating": 3.8546,
+  "stdLow": 2.8404,
+  "stdHigh": 4.8687,
+  "count": 13883
  },
  {
   "bookNumber": 219,
-  "avgRating": 3.8756,
-  "stdLow": 2.8962,
-  "stdHigh": 4.8549,
-  "count": 127816
+  "avgRating": 3.852,
+  "stdLow": 2.843,
+  "stdHigh": 4.8609,
+  "count": 13802
  },
  {
   "bookNumber": 220,
-  "avgRating": 3.8747,
-  "stdLow": 2.8961,
-  "stdHigh": 4.8533,
-  "count": 127109
+  "avgRating": 3.8397,
+  "stdLow": 2.8191,
+  "stdHigh": 4.8602,
+  "count": 13704
  },
  {
   "bookNumber": 221,
-  "avgRating": 3.8737,
-  "stdLow": 2.8946,
-  "stdHigh": 4.8527,
-  "count": 126445
+  "avgRating": 3.8474,
+  "stdLow": 2.8354,
+  "stdHigh": 4.8594,
+  "count": 13616
  },
  {
   "bookNumber": 222,
-  "avgRating": 3.8775,
-  "stdLow": 2.9,
-  "stdHigh": 4.8549,
-  "count": 125758
+  "avgRating": 3.8376,
+  "stdLow": 2.8178,
+  "stdHigh": 4.8574,
+  "count": 13531
  },
  {
   "bookNumber": 223,
-  "avgRating": 3.874,
-  "stdLow": 2.8963,
-  "stdHigh": 4.8516,
-  "count": 125083
+  "avgRating": 3.8426,
+  "stdLow": 2.8277,
+  "stdHigh": 4.8574,
+  "count": 13461
  },
  {
   "bookNumber": 224,
-  "avgRating": 3.8728,
-  "stdLow": 2.8948,
-  "stdHigh": 4.8508,
-  "count": 124433
+  "avgRating": 3.8494,
+  "stdLow": 2.8384,
+  "stdHigh": 4.8605,
+  "count": 13369
  },
  {
   "bookNumber": 225,
-  "avgRating": 3.8727,
-  "stdLow": 2.8952,
-  "stdHigh": 4.8502,
-  "count": 123798
+  "avgRating": 3.8395,
+  "stdLow": 2.8221,
+  "stdHigh": 4.8568,
+  "count": 13288
  },
  {
   "bookNumber": 226,
-  "avgRating": 3.8702,
-  "stdLow": 2.8923,
-  "stdHigh": 4.848,
-  "count": 123136
+  "avgRating": 3.8462,
+  "stdLow": 2.8271,
+  "stdHigh": 4.8652,
+  "count": 13215
  },
  {
   "bookNumber": 227,
-  "avgRating": 3.8753,
-  "stdLow": 2.8973,
-  "stdHigh": 4.8532,
-  "count": 122515
+  "avgRating": 3.8321,
+  "stdLow": 2.8123,
+  "stdHigh": 4.8519,
+  "count": 13136
  },
  {
   "bookNumber": 228,
-  "avgRating": 3.874,
-  "stdLow": 2.8964,
-  "stdHigh": 4.8516,
-  "count": 121902
+  "avgRating": 3.8506,
+  "stdLow": 2.8397,
+  "stdHigh": 4.8614,
+  "count": 13062
  },
  {
   "bookNumber": 229,
-  "avgRating": 3.8722,
-  "stdLow": 2.8945,
-  "stdHigh": 4.8498,
-  "count": 121236
+  "avgRating": 3.8432,
+  "stdLow": 2.8325,
+  "stdHigh": 4.854,
+  "count": 12993
  },
  {
   "bookNumber": 230,
-  "avgRating": 3.8687,
-  "stdLow": 2.8879,
-  "stdHigh": 4.8495,
-  "count": 120597
+  "avgRating": 3.8372,
+  "stdLow": 2.8205,
+  "stdHigh": 4.854,
+  "count": 12921
  },
  {
   "bookNumber": 231,
-  "avgRating": 3.8687,
-  "stdLow": 2.8877,
-  "stdHigh": 4.8497,
-  "count": 119942
+  "avgRating": 3.839,
+  "stdLow": 2.8243,
+  "stdHigh": 4.8537,
+  "count": 12854
  },
  {
   "bookNumber": 232,
-  "avgRating": 3.8706,
-  "stdLow": 2.8926,
-  "stdHigh": 4.8486,
-  "count": 119336
+  "avgRating": 3.8552,
+  "stdLow": 2.8529,
+  "stdHigh": 4.8575,
+  "count": 12777
  },
  {
   "bookNumber": 233,
-  "avgRating": 3.8702,
-  "stdLow": 2.8926,
-  "stdHigh": 4.8478,
-  "count": 118727
+  "avgRating": 3.8436,
+  "stdLow": 2.8278,
+  "stdHigh": 4.8593,
+  "count": 12703
  },
  {
   "bookNumber": 234,
-  "avgRating": 3.8721,
-  "stdLow": 2.8957,
-  "stdHigh": 4.8485,
-  "count": 118103
+  "avgRating": 3.8518,
+  "stdLow": 2.8418,
+  "stdHigh": 4.8618,
+  "count": 12632
  },
  {
   "bookNumber": 235,
-  "avgRating": 3.8689,
-  "stdLow": 2.8905,
-  "stdHigh": 4.8473,
-  "count": 117501
+  "avgRating": 3.8457,
+  "stdLow": 2.8292,
+  "stdHigh": 4.8623,
+  "count": 12569
  },
  {
   "bookNumber": 236,
-  "avgRating": 3.8743,
-  "stdLow": 2.9006,
-  "stdHigh": 4.848,
-  "count": 116928
+  "avgRating": 3.8413,
+  "stdLow": 2.8301,
+  "stdHigh": 4.8525,
+  "count": 12504
  },
  {
   "bookNumber": 237,
-  "avgRating": 3.8671,
-  "stdLow": 2.887,
-  "stdHigh": 4.8471,
-  "count": 116305
+  "avgRating": 3.8303,
+  "stdLow": 2.8103,
+  "stdHigh": 4.8503,
+  "count": 12432
  },
  {
   "bookNumber": 238,
-  "avgRating": 3.8668,
-  "stdLow": 2.8881,
-  "stdHigh": 4.8455,
-  "count": 115728
+  "avgRating": 3.8346,
+  "stdLow": 2.815,
+  "stdHigh": 4.8542,
+  "count": 12357
  },
  {
   "bookNumber": 239,
-  "avgRating": 3.8653,
-  "stdLow": 2.8872,
-  "stdHigh": 4.8433,
-  "count": 115125
+  "avgRating": 3.8517,
+  "stdLow": 2.833,
+  "stdHigh": 4.8703,
+  "count": 12289
  },
  {
   "bookNumber": 240,
-  "avgRating": 3.8665,
-  "stdLow": 2.8891,
-  "stdHigh": 4.8439,
-  "count": 114576
+  "avgRating": 3.8554,
+  "stdLow": 2.8597,
+  "stdHigh": 4.8511,
+  "count": 12219
  },
  {
   "bookNumber": 241,
-  "avgRating": 3.866,
-  "stdLow": 2.8871,
-  "stdHigh": 4.8449,
-  "count": 114006
+  "avgRating": 3.8307,
+  "stdLow": 2.8149,
+  "stdHigh": 4.8465,
+  "count": 12158
  },
  {
   "bookNumber": 242,
-  "avgRating": 3.8694,
-  "stdLow": 2.8907,
-  "stdHigh": 4.8482,
-  "count": 113428
+  "avgRating": 3.8409,
+  "stdLow": 2.8318,
+  "stdHigh": 4.8499,
+  "count": 12097
  },
  {
   "bookNumber": 243,
-  "avgRating": 3.8655,
-  "stdLow": 2.8883,
-  "stdHigh": 4.8427,
-  "count": 112809
+  "avgRating": 3.8575,
+  "stdLow": 2.861,
+  "stdHigh": 4.8539,
+  "count": 12031
  },
  {
   "bookNumber": 244,
-  "avgRating": 3.8672,
-  "stdLow": 2.8881,
-  "stdHigh": 4.8463,
-  "count": 112266
+  "avgRating": 3.8399,
+  "stdLow": 2.8304,
+  "stdHigh": 4.8494,
+  "count": 11954
  },
  {
   "bookNumber": 245,
-  "avgRating": 3.8658,
-  "stdLow": 2.8886,
-  "stdHigh": 4.8431,
-  "count": 111730
+  "avgRating": 3.841,
+  "stdLow": 2.8128,
+  "stdHigh": 4.8693,
+  "count": 11896
  },
  {
   "bookNumber": 246,
-  "avgRating": 3.8689,
-  "stdLow": 2.8936,
-  "stdHigh": 4.8441,
-  "count": 111200
+  "avgRating": 3.8395,
+  "stdLow": 2.8253,
+  "stdHigh": 4.8537,
+  "count": 11830
  },
  {
   "bookNumber": 247,
-  "avgRating": 3.8616,
-  "stdLow": 2.8854,
-  "stdHigh": 4.8378,
-  "count": 110651
+  "avgRating": 3.8498,
+  "stdLow": 2.838,
+  "stdHigh": 4.8616,
+  "count": 11764
  },
  {
   "bookNumber": 248,
-  "avgRating": 3.8625,
-  "stdLow": 2.8815,
-  "stdHigh": 4.8434,
-  "count": 110078
+  "avgRating": 3.8452,
+  "stdLow": 2.8326,
+  "stdHigh": 4.8577,
+  "count": 11676
  },
  {
   "bookNumber": 249,
-  "avgRating": 3.8626,
-  "stdLow": 2.8858,
-  "stdHigh": 4.8394,
-  "count": 109502
+  "avgRating": 3.8437,
+  "stdLow": 2.8356,
+  "stdHigh": 4.8517,
+  "count": 11609
  },
  {
   "bookNumber": 250,
-  "avgRating": 3.8642,
-  "stdLow": 2.8898,
-  "stdHigh": 4.8386,
-  "count": 108954
+  "avgRating": 3.8382,
+  "stdLow": 2.8195,
+  "stdHigh": 4.8569,
+  "count": 11545
  }
 ]
